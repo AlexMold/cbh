@@ -15,8 +15,10 @@
 @import "table.scss";
 
 body {
-  @include rem(font-size, 20px);
+  @include rem(font-size, 14px);
+  font-family: 'Roboto R';
 }
+
 /*!
  * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
