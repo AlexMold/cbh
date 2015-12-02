@@ -1,12 +1,11 @@
 
+// Text color
+$gray-text: #ababab;
+$gray-text-menu: #999999;
 
-$blue-text: #26a6d1;
-$darkblue-text: #003350;
-$gray-back: #f7f7f7;
-$gray-border: #e0e0e0;
-$gray-text: #a3adb7;
-$darkgray-text: #7e8994;
-$darkest-gray-text: #575757;
+// Background color
+$back-banner: #eff8fc;
+
 
 @mixin font($family, $size, $weight){
   font: {
