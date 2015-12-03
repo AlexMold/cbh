@@ -7,6 +7,8 @@ $blue-text: #1aaeec;
 // Background color
 $back-banner: #eff8fc;
 
+// Border color
+$border-color: #dadada;
 
 @mixin font($family, $size, $weight){
   font: {

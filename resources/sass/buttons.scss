@@ -4,12 +4,15 @@
 	background: #cce8f4;
 }
 .right-search__input{
-	border-right: 0;
+	border: 0;
+	border-radius: 20px 0 0 20px;
+	background: #f8f8f8;
 }
 .right-search__button-wrapper{
-	background: transparent;
+	background: #f8f8f8;
 	border-left: 0;
 	padding: 5px;
+	border-radius: 0 20px 20px 0;
 }
 .right-search__button{
 	background: transparent;

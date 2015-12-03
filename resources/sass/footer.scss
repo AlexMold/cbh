@@ -3,10 +3,64 @@
 .footer{
 	z-index: 99;
 	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color: white;
+	border-top: 1px solid $border-color;
+	font-family: 'Roboto L';
 	&__social{
 		&-item{
 			display: inline-block;
 		}
+	}
+	&__social{
+		margin-bottom: 0;
+		&-item{
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+			margin: 0 2px;
+			a{
+				display: block;
+				color: white;
+				text-align: center;
+				line-height: 16px;
+			}
+			&.vk a{
+				background: #51749c;
+			}
+			&.facebook a{
+				background: #45639e;
+			}
+			&.test a{
+				background: red;
+			}
+		}
+	}
+	&__contact{
+		text-align: center;
+	}
+}
+.copyright{
+	display: inline-block;
+	p{
+		margin-bottom: 0;
+		+ p{
+			color: $gray-text;
+		}
+	}
+}
+.select__language{
+	border: 0;
+	box-shadow: none;
+	height: auto;
+	display: inline-block;
+	float: right;
+	.ico-flag{
+		margin: 0 10px;
+	}
+	&-trigger{
+		background: url(../images/ico-arrow-dropdown.png) center right no-repeat;
+		padding-right: 20px;
 	}
 }

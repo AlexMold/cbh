@@ -7655,16 +7655,31 @@ button.close {
   .ico-flag.ua {
     background-image: url(../images/flag-ua.png); }
 
+.fa.red-color {
+  color: #d24949; }
+
+.fa.gray-color {
+  color: #ababab; }
+
+.fa.green-color {
+  color: #43b828; }
+
+.fa.blue-color {
+  color: #1aaeec; }
+
 .radio-nav:checked + label {
   background: #cce8f4; }
 
 .right-search__input {
-  border-right: 0; }
+  border: 0;
+  border-radius: 20px 0 0 20px;
+  background: #f8f8f8; }
 
 .right-search__button-wrapper {
-  background: transparent;
+  background: #f8f8f8;
   border-left: 0;
-  padding: 5px; }
+  padding: 5px;
+  border-radius: 0 20px 20px 0; }
 
 .right-search__button {
   background: transparent;
@@ -7677,15 +7692,58 @@ button.close {
 .footer {
   z-index: 99;
   width: 100%;
-  background-color: white; }
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-top: 1px solid #dadada;
+  font-family: 'Roboto L'; }
   .footer__social-item {
     display: inline-block; }
+  .footer__social {
+    margin-bottom: 0; }
+    .footer__social-item {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      margin: 0 2px; }
+      .footer__social-item a {
+        display: block;
+        color: white;
+        text-align: center;
+        line-height: 16px; }
+      .footer__social-item.vk a {
+        background: #51749c; }
+      .footer__social-item.facebook a {
+        background: #45639e; }
+      .footer__social-item.test a {
+        background: red; }
+  .footer__contact {
+    text-align: center; }
+
+.copyright {
+  display: inline-block; }
+  .copyright p {
+    margin-bottom: 0; }
+    .copyright p + p {
+      color: #ababab; }
+
+.select__language {
+  border: 0;
+  box-shadow: none;
+  height: auto;
+  display: inline-block;
+  float: right; }
+  .select__language .ico-flag {
+    margin: 0 10px; }
+  .select__language-trigger {
+    background: url(../images/ico-arrow-dropdown.png) center right no-repeat;
+    padding-right: 20px; }
 
 .header {
   min-height: 80px;
   padding: 20px 30px;
   margin: 0 -15px;
-  border-bottom: 1px solid #ababab; }
+  border-bottom: 1px solid #dadada; }
   .header__contact {
     color: #ababab; }
   .header-card.toggled {
@@ -7710,7 +7768,7 @@ button.close {
       font-size: 15px;
       font-size: 1.5rem; }
   .header__banner {
-    border-bottom: 1px solid #ababab;
+    border-bottom: 1px solid #dadada;
     background-color: #eff8fc;
     line-height: 30px;
     padding: 0 20px; }
@@ -7747,7 +7805,7 @@ button.close {
   width: 50px;
   height: 100%;
   margin-left: -150px;
-  overflow-y: auto;
+  overflow: hidden;
   background: #373b3e;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -7915,6 +7973,10 @@ ul {
 .days-navigation {
   float: left;
   display: inline-block; }
+  .days-navigation__label.first {
+    border-radius: 20px 0 0 20px !important; }
+  .days-navigation__label.last {
+    border-radius: 0 20px 20px 0 !important; }
   .days-navigation__label:not(:first-child):not(:last-child) {
     border-right: 0; }
 
@@ -7932,8 +7994,31 @@ ul {
     .mail-filter__item.active i {
       color: #1aaeec; }
 
-.mail-list__item-trigger > div {
-  padding-right: 0; }
+.mail-list {
+  margin-bottom: 0;
+  border-bottom: 1px solid #dadada; }
+  .mail-list__item-trigger {
+    line-height: 40px;
+    line-height: 4rem;
+    background: url(../images/ico-arrow-down.png) 1% center no-repeat;
+    font-family: 'Roboto L';
+    border-top: 1px solid #dadada;
+    margin: 0 20px; }
+    .mail-list__item-trigger:after, .mail-list__item-trigger:before {
+      display: table;
+      content: " ";
+      clear: both; }
+    .mail-list__item-trigger i {
+      color: #ababab;
+      font-size: 20px;
+      font-size: 2rem;
+      margin: 0 8px;
+      line-height: 40px;
+      line-height: 4rem; }
+    .mail-list__item-trigger .ico-flag {
+      margin: 14px 0 14px 20px; }
+    .mail-list__item-trigger > div {
+      padding-right: 0; }
 
 .mail__short-description {
   width: 80%;
@@ -7944,6 +8029,22 @@ ul {
 .mail__date-description {
   text-align: center; }
 
+.mail-identity {
+  padding-left: 15px; }
+
 .right-search a {
   font-size: 17px;
   margin: 5px; }
+
+.info-box__trigger {
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  width: calc(100% + 30px);
+  margin: 0 -15px;
+  text-align: center;
+  line-height: 30px;
+  background: white;
+  cursor: pointer;
+  border-top: 1px solid #dadada;
+  box-shadow: -1px 0 0 rgba(0, 0, 0, 0.125); }

@@ -60,6 +60,12 @@ ul{
 	float: left;
 	display: inline-block;
 	&__label{
+		&.first{
+			border-radius: 20px 0 0 20px !important;
+		}
+		&.last{
+			border-radius: 0 20px 20px 0 !important;
+		}
 		&:not(:first-child):not(:last-child){
 			border-right: 0;
 		}
@@ -85,8 +91,25 @@ ul{
 	}
 	&-container{}
 	&-list{
+		margin-bottom: 0;
+		border-bottom: 1px solid $border-color;
 		&__item{
 			&-trigger{
+				@include rem(line-height, 40px);
+				@include clearfix;
+				background: url(../images/ico-arrow-down.png) 1% center no-repeat;
+				font-family: 'Roboto L';
+				border-top: 1px solid $border-color;
+				margin: 0 20px;
+				i{
+					color: $gray-text;
+					@include rem(font-size, 20px);
+					margin: 0 8px;
+					@include rem(line-height, 40px);
+				}
+				.ico-flag{
+					margin: 14px 0 14px 20px;
+				}
 				> div{
 					padding-right: 0;
 				}
@@ -102,6 +125,10 @@ ul{
 	&__date-description{
 		text-align: center;
 	}
+	&-identity{
+		padding-left: 15px;
+
+	}
 }
 
 .right-search{
@@ -109,4 +136,17 @@ ul{
 		font-size: 17px;
 		margin: 5px;
 	}
+}
+.info-box__trigger{
+	position: absolute;
+	bottom: 0;
+  left: -15px;
+  width: calc(100% + 30px);
+	margin: 0 -15px;
+	text-align: center;
+	line-height: 30px;
+	background: white;
+	cursor: pointer;
+	border-top: 1px solid $border-color;
+	box-shadow: -1px 0 0 rgba(0, 0, 0, .125);
 }

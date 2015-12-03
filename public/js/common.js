@@ -14,3 +14,16 @@ $(".mail-filter__item").click(function(e) {
 		e.preventDefault();
 		$(this).toggleClass('active');
 });
+
+$(".select__language-trigger").click(function(e) {
+		e.preventDefault();
+		$(this).siblings('ul').toggle('hidden');
+});
+
+$(".select__language-item").click(function(e) {
+		e.preventDefault();
+		var langChoose = $(this).html();
+		console.log(langChoose);
+		$('.select__language-trigger').html(langChoose);
+		$(this).parent('ul').toggle('hidden');
+});

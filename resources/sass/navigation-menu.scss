@@ -7,7 +7,7 @@
     width: 50px;
     height: 100%;
     margin-left: -150px;
-    overflow-y: auto;
+    overflow: hidden;
     background: #373b3e;
     @include transit(.5s);
 }
