@@ -2,13 +2,13 @@
 
 .sidebar-wrapper {
     z-index: 1000;
-    position: fixed;
+    position: absolute;
     left: 150px;
-    width: 0;
+    width: 50px;
     height: 100%;
     margin-left: -150px;
     overflow-y: auto;
-    background: #000;
+    background: #373b3e;
     @include transit(.5s);
 }
 
@@ -17,9 +17,74 @@
 }
 
 /* Sidebar Styles */
+.sidebar-wrapper.toggled{
+	.sidebar {
+		&-nav{
+		    position: absolute;
+		    top: 0;
+		    width: 150px;
+		    margin: 0;
+		    padding: 0;
+		    list-style: none;
+		    &__item{
+		    	text-indent: 15px;
+			    line-height: 40px;
+			    a{
+			    	display: block;
+				    text-decoration: none;
+				    color: #999999;
+				    &:hover{
+				    	text-decoration: none;
+					    color: #fff;
+					    background: #2d3133;
+				    }
+				    &:active,
+				    &:focus{
+				    	text-decoration: none;
+				    }
+				    i{
+				    	font-size: 15px;
+				    	margin-right: 10px;
+				    	@include transit();
+				    }
+				    span{
+				    	display: inline;
+				    	@include transit();
+				    }
+			    }
+		    }
+		}
+		&-brand {
+	    line-height: 60px;
+	    padding-left: 20px;
 
-.sidebar {
-	&-nav{
+		}
+	}
+	.hide-menu{
+		position: absolute;
+		bottom: 150px;
+		left: 30px;
+		color: $gray-text-menu;
+		&:hover{
+			text-decoration: none;
+			color: $gray-text-menu;
+		}
+		i{
+			margin-right: 10px;
+			transform: none;
+			font-size: 15px;
+			@include transit(.2s);
+		}
+		span{
+			display: inline;
+		}
+	}
+}
+
+
+.sidebar-wrapper{
+	.sidebar {
+		&-nav{
 	    position: absolute;
 	    top: 0;
 	    width: 150px;
@@ -27,7 +92,7 @@
 	    padding: 0;
 	    list-style: none;
 	    &__item{
-	    	text-indent: 20px;
+	    	text-indent: 6px;
 		    line-height: 40px;
 		    a{
 		    	display: block;
@@ -36,25 +101,46 @@
 			    &:hover{
 			    	text-decoration: none;
 				    color: #fff;
-				    background: rgba(255,255,255,0.2);
+				    background: #2d3133;
 			    }
 			    &:active,
 			    &:focus{
 			    	text-decoration: none;
 			    }
+			    span{
+			    	display: none;
+			    	@include transit();
+			    }
+			    i{
+			    	font-size: 25px;
+			    	@include transit();
+			    }
 		    }
 	    }
-	}
-	&-brand {
-		height: 65px;
-	    font-size: 18px;
+		}
+		&-brand {
 	    line-height: 60px;
-	    a{
-	    	color: #999999;
-	    	&:hover{
-	    		color: #fff;
-			    background: none;
-	    	}
-	    }
+	    padding-left: 12px;
+		}
+	}
+	.hide-menu{
+		position: absolute;
+		bottom: 150px;
+		left: 10px;
+		color: $gray-text-menu;
+		&:hover{
+			text-decoration: none;
+			color: $gray-text-menu;
+		}
+		i{
+			margin-right: 0;
+			transform: rotate(180deg);
+			font-size: 25px;
+			@include transit(.2s);
+		}
+		span{
+			display: none;
+		}
 	}
 }
+

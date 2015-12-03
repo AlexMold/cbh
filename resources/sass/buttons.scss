@@ -1,2 +1,18 @@
 @import 'var.scss';
 
+.radio-nav:checked + label{
+	background: #cce8f4;
+}
+.right-search__input{
+	border-right: 0;
+}
+.right-search__button-wrapper{
+	background: transparent;
+	border-left: 0;
+	padding: 5px;
+}
+.right-search__button{
+	background: transparent;
+	border: none;
+	outline: none;
+}

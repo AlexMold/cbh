@@ -1,1 +1,17 @@
 @import 'var.scss';
+
+.ico-flag{
+	width: 18px;
+	height: 12px;
+	display: inline-block;
+	background-size: contain;
+	background-origin: center center;
+	background-repeat: no-repeat;
+	&.bel{
+		background-image: url(../images/flag-by.png);
+	}&.rus{
+		background-image: url(../images/flag-ru.png);
+	}&.ua{
+		background-image: url(../images/flag-ua.png);
+	}
+}

@@ -3,4 +3,71 @@
 .header{
 	min-height: 80px;
 	padding: 20px 30px;
+	margin: 0 -15px;
+	border-bottom: 1px solid $gray-text;
+	&__contact{
+		color: $gray-text;
+	}
+	&-card.toggled{
+		position: absolute;
+		top: -10px;
+		right: 5px;
+		padding: 10px 10px 10px 30px;
+		box-shadow: 1px 1px 5px gray;
+		background: white;
+		.card__list{
+			display: block;
+			&_item{
+				a{
+					color: $gray-text;
+				}
+			}
+		}
+	}
+	&-card{
+		&__trigger{
+			position: relative;
+			padding-right: 25px;
+			background: url(../images/ico-arrow-dropdown.png) center right no-repeat;
+			i{
+				position: absolute;
+				top: 3px;
+				left: -20px;
+				@include rem(font-size, 15px);
+			}
+		}
+	}
+	&__banner{
+		border-bottom: 1px solid $gray-text;
+		background-color: $back-banner;
+		line-height: 30px;
+		padding: 0 20px;
+		p{
+			margin-bottom: 0;
+		}
+	}
+}
+.h1-name{
+	display: inline-block;
+	@include font('Roboto L', 24px, normal);
+	line-height: 30px;
+}
+.dicom-options{
+	display: inline-block;
+	position: relative;
+	&__head{
+		@extend .h1-name;
+		margin-left: 15px;
+		padding-right: 20px;
+		background: url(../images/ico-arrow-down.png) center right no-repeat;
+		color: $gray-text;
+		cursor: pointer;
+	}
+	&__list{
+		position: absolute;
+		top: 30px;
+		left: 15px;
+		width: 100%;
+		background-color: white;
+	}
 }

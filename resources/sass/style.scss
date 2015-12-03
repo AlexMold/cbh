@@ -18,6 +18,10 @@ body {
   @include rem(font-size, 14px);
   font-family: 'Roboto R';
 }
+ul{
+	list-style: none;
+	padding-left: 0;
+}
 
 /*!
  * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
@@ -28,10 +32,12 @@ body {
 
 
 /* Toggle Styles */
-
 .wrapper {
-    padding-left: 0;
+    padding-left: 50px;
     @include transit(.5s);
+    position: relative;
+    height: 100vh;
+    z-index: 0;
 }
 
 .wrapper.toggled {
@@ -40,5 +46,67 @@ body {
 
 .page-content-wrapper {
     width: 100%;
-    padding: 0 15px;
+}
+.main{
+	@include clearfix();
+	&-header{
+		padding: 35px 0;
+		.row{
+			margin: 0;
+		}
+	}
+}
+.days-navigation{
+	float: left;
+	display: inline-block;
+	&__label{
+		&:not(:first-child):not(:last-child){
+			border-right: 0;
+		}
+	}
+}
+.mail{
+	&-filter{
+		display: inline-block;
+		float: left;
+		margin-left: 10px;
+		&__item{
+			display: inline-block;
+			line-height: 33px;
+			padding: 0 10px;
+			cursor: pointer;
+			@include rem(font-size, 18px);
+			&.active{
+				i{
+					color: $blue-text;
+				}
+			}
+		}
+	}
+	&-container{}
+	&-list{
+		&__item{
+			&-trigger{
+				> div{
+					padding-right: 0;
+				}
+			}
+		}
+	}
+	&__short-description{
+		width: 80%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	&__date-description{
+		text-align: center;
+	}
+}
+
+.right-search{
+	a{
+		font-size: 17px;
+		margin: 5px;
+	}
 }
