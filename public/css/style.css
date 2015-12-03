@@ -7671,10 +7671,10 @@ button.close {
   border: none;
   outline: none; }
 
+.stylish-input-group {
+  margin-right: 10px; }
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   z-index: 99;
   width: 100%;
   background-color: white; }
@@ -7893,7 +7893,7 @@ ul {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   position: relative;
-  height: 100vh;
+  min-height: calc(100vh - 100px);
   z-index: 0; }
 
 .wrapper.toggled {

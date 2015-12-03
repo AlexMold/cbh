@@ -36,7 +36,7 @@ ul{
     padding-left: 50px;
     @include transit(.5s);
     position: relative;
-    height: 100vh;
+    min-height: calc(100vh - 100px);
     z-index: 0;
 }
 
