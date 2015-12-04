@@ -20,10 +20,7 @@
 .sidebar-wrapper.toggled{
 	.sidebar {
 		&-nav{
-		    position: absolute;
-		    top: 0;
 		    width: 150px;
-		    margin: 0;
 		    padding: 0;
 		    list-style: none;
 		    &__item{
@@ -57,17 +54,13 @@
 		&-brand {
 	    line-height: 60px;
 	    padding-left: 20px;
-
 		}
 	}
 	.hide-menu{
-		position: absolute;
-		bottom: 150px;
-		left: 30px;
 		color: $gray-text-menu;
+		margin-left: 30px;
 		&:hover{
 			text-decoration: none;
-			color: $gray-text-menu;
 		}
 		i{
 			margin-right: 10px;
@@ -85,10 +78,8 @@
 .sidebar-wrapper{
 	.sidebar {
 		&-nav{
-	    position: absolute;
-	    top: 0;
 	    width: 150px;
-	    margin: 0;
+	    margin-bottom: 150px;
 	    padding: 0;
 	    list-style: none;
 	    &__item{
@@ -124,13 +115,11 @@
 		}
 	}
 	.hide-menu{
-		position: absolute;
-		bottom: 150px;
-		left: 10px;
 		color: $gray-text-menu;
+		margin-left: 15px;
 		&:hover{
 			text-decoration: none;
-			color: $gray-text-menu;
+			color: white;
 		}
 		i{
 			margin-right: 0;
