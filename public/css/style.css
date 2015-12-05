@@ -2345,16 +2345,16 @@ output {
   background-image: none;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
   .form-control:focus {
     border-color: #66afe9;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+    -webkit-box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
   .form-control::-moz-placeholder {
     color: #999;
     opacity: 1; }
@@ -7809,6 +7809,7 @@ button.close {
     border-bottom: 1px solid #dadada;
     background-color: #eff8fc;
     line-height: 30px;
+    margin-bottom: 35px;
     padding: 0 20px; }
     .header__banner p {
       margin-bottom: 0; }
@@ -7961,16 +7962,19 @@ button.close {
   font-family: "Roboto L";
   height: 100vh;
   margin-right: 0;
-  margin-top: 35px;
   padding-left: 30px;
-  padding-top: 10px;
-  border-left: 1px solid #dadada; }
+  padding-top: 10px; }
   .aside-menu__item {
     margin: 10px 0; }
     .aside-menu__item a {
       color: #ababab; }
     .aside-menu__item.active a {
       color: #333; }
+
+.table {
+  font-family: "Roboto L"; }
+  .table .unactive {
+    color: #999999; }
 
 body {
   font-size: 14px;
@@ -7998,7 +8002,6 @@ a:hover {
   transition: all 0.5s ease;
   position: relative;
   min-height: calc(100vh - 60px);
-  padding-bottom: 50px;
   z-index: 0; }
 
 .wrapper.toggled {
@@ -8011,13 +8014,17 @@ a:hover {
   width: 100%; }
 
 .main {
-  min-height: calc(100vh - 200px); }
+  min-height: calc(100vh - 200px);
+  padding-bottom: 31px; }
   .main:after, .main:before {
     display: table;
     content: " ";
     clear: both; }
+  .main-content {
+    border-right: 1px solid #dadada;
+    box-sizing: border-box; }
   .main-header {
-    padding: 35px 0; }
+    padding-bottom: 35px; }
     .main-header .row {
       margin: 0; }
 
@@ -8165,3 +8172,21 @@ a:hover {
   font-size: 1.2rem;
   clear: both;
   padding: 0 10px; }
+
+.select__department {
+  font-family: 'Roboto L'; }
+  .select__department-trigger {
+    background: url(../images/ico-arrow-down.png) 95% center no-repeat;
+    position: relative; }
+    .select__department-trigger + ul {
+      position: absolute;
+      width: calc(100% - 30px);
+      top: 99%;
+      background: white;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.15); }
+  .select__department-item {
+    width: 100%;
+    padding: 5px 15px;
+    cursor: pointer; }
+    .select__department-item:hover {
+      background: #eff8fc; }

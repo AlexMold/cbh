@@ -15,16 +15,16 @@ $(".mail-filter__item").click(function(e) {
 		$(this).toggleClass('active');
 });
 
-$(".select__language-trigger").click(function(e) {
+$(".select-trigger, .select-trigger2").click(function(e) {
 		e.preventDefault();
 		$(this).siblings('ul').toggle('hidden');
 });
 
-$(".select__language-item").click(function(e) {
+$(".select-item, .select-item2").click(function(e) {
 		e.preventDefault();
 		var langChoose = $(this).html();
 		console.log(langChoose);
-		$('.select__language-trigger').html(langChoose);
+		$(this).parent().siblings('.select-trigger, .select-trigger2').html(langChoose);
 		$(this).parent('ul').toggle('hidden');
 });
 

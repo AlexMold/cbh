@@ -42,7 +42,6 @@ a{
     @include transit(.5s);
     position: relative;
     min-height: calc(100vh - 60px);
-    padding-bottom: 50px;
     z-index: 0;
 }
 
@@ -58,8 +57,13 @@ a{
 .main{
 	@include clearfix();
 	min-height: calc(100vh - 200px);
+	padding-bottom: 31px;
+	&-content{
+		border-right: 1px solid $border-color;
+		box-sizing: border-box;
+	}
 	&-header{
-		padding: 35px 0;
+		padding-bottom: 35px;
 		.row{
 			margin: 0;
 		}
@@ -224,5 +228,27 @@ a{
 		@include rem(font-size, 12px);
 		clear: both;
 		padding: 0 10px;
+	}
+}
+.select__department{
+	font-family: 'Roboto L';
+	&-trigger{
+		background: url(../images/ico-arrow-down.png) 95% center no-repeat;
+		position: relative;
+		+ ul{
+			position: absolute;
+			width: calc(100% - 30px);
+			top: 99%;
+			background: white;
+			box-shadow: 0 0 2px rgba(0, 0, 0, .15);
+		}
+	}
+	&-item{
+		width: 100%;
+		padding: 5px 15px;
+		cursor: pointer;
+		&:hover{
+			background: #eff8fc;
+		}
 	}
 }
