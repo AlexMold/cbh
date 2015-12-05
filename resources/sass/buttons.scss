@@ -24,3 +24,24 @@
 .stylish-input-group{
 	margin-right: 10px;
 }
+.btn-blue{
+	@include button(32px, auto, white, $back-button);
+	@include transit();
+	padding: 0 20px;
+	letter-spacing: .3px;
+	border-radius: 4px;
+	font-family: "Roboto L";
+}
+.btn-disabled{
+	background: $border-color;
+	color: $gray-text;
+	border: 0;
+	margin-top: 5px;
+}
+.text-right{
+	text-align: right;
+}
+.textarea{
+	width: 100%;
+	display: block;
+}

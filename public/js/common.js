@@ -39,6 +39,11 @@ $(".info-box__close").click(function(e) {
 		$(this).parent('.info-box').addClass('hidden');
 });
 
+$(".aside-menu__item").click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass('active');
+});
+
 
 
     $(function() {

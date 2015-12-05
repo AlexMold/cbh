@@ -22,6 +22,11 @@ ul{
 	list-style: none;
 	padding-left: 0;
 }
+a{
+	&:hover{
+		text-decoration: none;
+	}
+}
 
 /*!
  * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
@@ -36,7 +41,8 @@ ul{
     padding-left: 50px;
     @include transit(.5s);
     position: relative;
-    min-height: calc(100vh - 59px);
+    min-height: calc(100vh - 60px);
+    padding-bottom: 50px;
     z-index: 0;
 }
 
@@ -51,6 +57,7 @@ ul{
 }
 .main{
 	@include clearfix();
+	min-height: calc(100vh - 200px);
 	&-header{
 		padding: 35px 0;
 		.row{
@@ -185,5 +192,37 @@ ul{
 		cursor: pointer;
 		border-top: 1px solid $border-color;
 		box-shadow: -1px 0 0 rgba(0, 0, 0, .125);
+	}
+}
+.accordeon-faq{
+	font-family: 'Roboto L';
+	&__trigger{
+		display: block;
+		background: url(../images/ico-arrow-up.png) center right no-repeat;
+	}
+	&__trigger.collapsed{
+		display: block;
+		background: url(../images/ico-arrow-down.png) center right no-repeat;
+	}
+}
+.request{
+	&-subject{
+		@include clearfix();
+		padding: 30px 15px;
+		border: 1px solid $border-color;
+		background: #fcfcfc;
+		margin-bottom: 20px;
+	}
+	&-question{
+		display: inline-block;
+		background: $back-banner;
+		padding: 15px;
+		margin-bottom: 10px;
+		border-radius: 5px;
+	}
+	&-question__date{
+		@include rem(font-size, 12px);
+		clear: both;
+		padding: 0 10px;
 	}
 }
