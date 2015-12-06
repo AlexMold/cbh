@@ -8058,14 +8058,21 @@ a:hover {
 
 .mail-list {
   margin-bottom: 0;
+  padding: 0 15px;
+  text-align: left;
   border-bottom: 1px solid #dadada; }
+  .mail-list__item-header {
+    background: #dadada;
+    padding: 5px 0; }
+    .mail-list__item-header .fa {
+      font-size: 17px;
+      margin: 5px; }
   .mail-list__item-trigger {
     line-height: 40px;
     line-height: 4rem;
     background: url(../images/ico-arrow-down.png) 1% center no-repeat;
     font-family: 'Roboto L';
-    border-top: 1px solid #dadada;
-    margin: 0 20px; }
+    border-top: 1px solid #dadada; }
     .mail-list__item-trigger:after, .mail-list__item-trigger:before {
       display: table;
       content: " ";

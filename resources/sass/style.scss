@@ -109,15 +109,24 @@ a{
 	&-container{}
 	&-list{
 		margin-bottom: 0;
+		padding: 0 15px;
+		text-align: left;
 		border-bottom: 1px solid $border-color;
 		&__item{
+			&-header{
+				background: $border-color;
+				padding: 5px 0;
+				.fa{
+					font-size: 17px;
+					margin: 5px;
+				}
+			}
 			&-trigger{
 				@include rem(line-height, 40px);
 				@include clearfix;
 				background: url(../images/ico-arrow-down.png) 1% center no-repeat;
 				font-family: 'Roboto L';
 				border-top: 1px solid $border-color;
-				margin: 0 20px;
 				i{
 					color: $gray-text;
 					@include rem(font-size, 20px);

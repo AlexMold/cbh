@@ -47,16 +47,14 @@ $(".aside-menu__item").click(function(e) {
 
 
     $(function() {
-      var caption = $(".mail-list__item").find(".mail-list__item-trigger"),
+      var caption = $(".mail-list__item").find(".mail-trigger"),
         content = $(".mail-list__item").find(".mail-list__item-content").hide();
 
       caption.click(function(e) {
         e.preventDefault();
         var activeContent = content.filter('.active');
         activeContent.removeClass('active').slideUp(600);
-        caption.removeClass('an_back');
         if ($(this).next(content).is(activeContent)) return;
         $(this).next(content).addClass('active').slideDown(300);
-        $(this).addClass('an_back');
       });
     });
