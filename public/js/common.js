@@ -58,3 +58,17 @@ $(".aside-menu__item").click(function(e) {
         $(this).next(content).addClass('active').slideDown(300);
       });
     });
+
+
+new Chartist.Line('#graphic', {
+  labels: ['01.04.2015', '01.05.2015', '01.06.2015', '01.07.2015', '01.08.2015', '01.09.2015', '01.10.2015', '01.11.2015'],
+  series: [
+    [6, 9, 7, 8, 5,8,1,25,15,20,2,9,28,25,35,3,5]
+  ]
+}, {
+  fullWidth: true,
+  low: 0,
+  chartPadding: {
+    right: 50
+  }
+});
