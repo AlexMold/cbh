@@ -184,10 +184,10 @@ a{
 	}
 	&__close{
 		position: absolute;
-		top: 0;
-		right: 10px;
+		top: 5px;
+		right: 5px;
 		cursor: pointer;
-		font-family: 'Roboto L';
+		font-style: light; 
 		@include rem(font-size, 20px);
 	}
 	p{
@@ -212,11 +212,21 @@ a{
 	font-family: 'Roboto L';
 	&__trigger{
 		display: block;
-		background: url(../images/ico-arrow-up.png) center right no-repeat;
+		.fa-angle-down{
+			display: none;
+		}
+		.fa-angle-up{
+			display: inline-block;
+			color: $blue-text;
+		}
 	}
 	&__trigger.collapsed{
-		display: block;
-		background: url(../images/ico-arrow-down.png) center right no-repeat;
+		.fa-angle-down{
+			display: inline-block;
+		}
+		.fa-angle-up{
+			display: none;
+		}
 	}
 }
 .request{
@@ -245,12 +255,15 @@ a{
 	&-trigger{
 		background: url(../images/ico-arrow-down.png) 95% center no-repeat;
 		position: relative;
-		+ ul{
-			position: absolute;
-			width: calc(100% - 30px);
-			top: 99%;
-			background: white;
-			box-shadow: 0 0 2px rgba(0, 0, 0, .15);
+		padding: 5px 15px;
+		a.chosen-single{
+			font-family: 'Roboto L';
+			font-size: 1.4rem;
+			padding: 0 !important;
+			border: 0 !important;
+			width: 100% !important;
+			background: white !important;
+			box-shadow: none !important;
 		}
 	}
 	&-item{

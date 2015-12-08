@@ -15,19 +15,20 @@ $(".mail-filter__item").click(function(e) {
 		$(this).toggleClass('active');
 });
 
-$(".select-trigger, .select-trigger2").click(function(e) {
+$(".select-trigger").click(function(e) {
 		e.preventDefault();
 		$(this).siblings('ul').toggle('hidden');
 });
 
-$(".select-item, .select-item2").click(function(e) {
+$(".select-item").click(function(e) {
 		e.preventDefault();
 		var langChoose = $(this).html();
 		console.log(langChoose);
-		$(this).parent().siblings('.select-trigger, .select-trigger2').html(langChoose);
+		$(this).parent().siblings('.select-trigger').html(langChoose);
 		$(this).parent('ul').toggle('hidden');
 });
 
+$('.select__department-trigger, .dicom-options__head').chosen({inherit_select_classes: true});
 
 
 $(".info-box__trigger").click(function(e) {

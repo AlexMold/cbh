@@ -56,13 +56,25 @@
 .dicom-options{
 	display: inline-block;
 	position: relative;
-	&__head{
+	margin-left: 15px;
+	width: 250px;
+	&__head {
+		width: 220px;
+	a{
 		@extend .h1-name;
-		margin-left: 15px;
-		padding-right: 20px;
-		background: url(../images/ico-arrow-down.png) center right no-repeat;
-		color: $gray-text;
+		color: $gray-text !important;
 		cursor: pointer;
+		width: 220px;
+		margin-top: -5px;
+
+		// specialize styles
+		padding: 0 !important;
+		border: 0 !important;
+		background: white !important;
+		box-shadow: none !important;
+		height: 30px !important;
+		line-height: 27px !important;
+		}	
 	}
 	&__list{
 		position: absolute;

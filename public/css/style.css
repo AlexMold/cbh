@@ -8320,6 +8320,8 @@ button.close {
     background: #3cafdf; }
   .btn-blue:active {
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  .btn-blue:hover {
+    color: white; }
 
 .btn-disabled {
   background: #dadada;
@@ -8421,7 +8423,7 @@ button.close {
     .header__banner p {
       margin-bottom: 0; }
 
-.h1-name, .dicom-options__head {
+.h1-name, .dicom-options__head a {
   display: inline-block;
   font-family: "Roboto L";
   font-size: 24px;
@@ -8430,13 +8432,22 @@ button.close {
 
 .dicom-options {
   display: inline-block;
-  position: relative; }
+  position: relative;
+  margin-left: 15px;
+  width: 250px; }
   .dicom-options__head {
-    margin-left: 15px;
-    padding-right: 20px;
-    background: url(../images/ico-arrow-down.png) center right no-repeat;
-    color: #ababab;
-    cursor: pointer; }
+    width: 220px; }
+    .dicom-options__head a {
+      color: #ababab !important;
+      cursor: pointer;
+      width: 220px;
+      margin-top: -5px;
+      padding: 0 !important;
+      border: 0 !important;
+      background: white !important;
+      box-shadow: none !important;
+      height: 30px !important;
+      line-height: 27px !important; }
   .dicom-options__list {
     position: absolute;
     top: 30px;
@@ -8505,11 +8516,7 @@ button.close {
   .sidebar-wrapper.toggled .hide-menu i {
     margin-right: 10px;
     transform: none;
-    font-size: 15px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
+    font-size: 15px; }
   .sidebar-wrapper.toggled .hide-menu span {
     display: inline; }
 
@@ -8557,11 +8564,7 @@ button.close {
   .sidebar-wrapper .hide-menu i {
     margin-right: 0;
     transform: rotate(180deg);
-    font-size: 25px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
+    font-size: 25px; }
   .sidebar-wrapper .hide-menu span {
     display: none; }
 
@@ -8733,10 +8736,10 @@ a:hover {
     width: calc(100% - 50px); }
   .info-box__close {
     position: absolute;
-    top: 0;
-    right: 10px;
+    top: 5px;
+    right: 5px;
     cursor: pointer;
-    font-family: 'Roboto L';
+    font-style: light;
     font-size: 20px;
     font-size: 2rem; }
   .info-box p {
@@ -8758,11 +8761,16 @@ a:hover {
 .accordeon-faq {
   font-family: 'Roboto L'; }
   .accordeon-faq__trigger {
-    display: block;
-    background: url(../images/ico-arrow-up.png) center right no-repeat; }
-  .accordeon-faq__trigger.collapsed {
-    display: block;
-    background: url(../images/ico-arrow-down.png) center right no-repeat; }
+    display: block; }
+    .accordeon-faq__trigger .fa-angle-down {
+      display: none; }
+    .accordeon-faq__trigger .fa-angle-up {
+      display: inline-block;
+      color: #1aaeec; }
+  .accordeon-faq__trigger.collapsed .fa-angle-down {
+    display: inline-block; }
+  .accordeon-faq__trigger.collapsed .fa-angle-up {
+    display: none; }
 
 .request-subject {
   padding: 30px 15px;
@@ -8791,13 +8799,16 @@ a:hover {
   font-family: 'Roboto L'; }
   .select__department-trigger {
     background: url(../images/ico-arrow-down.png) 95% center no-repeat;
-    position: relative; }
-    .select__department-trigger + ul {
-      position: absolute;
-      width: calc(100% - 30px);
-      top: 99%;
-      background: white;
-      box-shadow: 0 0 2px rgba(0, 0, 0, 0.15); }
+    position: relative;
+    padding: 5px 15px; }
+    .select__department-trigger a.chosen-single {
+      font-family: 'Roboto L';
+      font-size: 1.4rem;
+      padding: 0 !important;
+      border: 0 !important;
+      width: 100% !important;
+      background: white !important;
+      box-shadow: none !important; }
   .select__department-item {
     width: 100%;
     padding: 5px 15px;
