@@ -8262,15 +8262,19 @@ button.close {
   .ico-flag.ua {
     background-image: url(../images/flag-ua.png); }
 
+.red-color,
 .fa.red-color {
   color: #d24949; }
 
+.gray-color,
 .fa.gray-color {
   color: #ababab; }
 
+.green-color,
 .fa.green-color {
   color: #43b828; }
 
+.blue-color,
 .fa.blue-color {
   color: #1aaeec; }
 
@@ -8328,6 +8332,10 @@ button.close {
   color: #ababab;
   border: 0;
   margin-top: 5px; }
+
+.btn-copy {
+  background: white;
+  border: 1px solid #1aaeec; }
 
 .text-right {
   text-align: right; }
@@ -8423,12 +8431,15 @@ button.close {
     .header__banner p {
       margin-bottom: 0; }
 
-.h1-name, .dicom-options__head a {
+.h1-name, .h3-name, .dicom-options__head a {
   display: inline-block;
   font-family: "Roboto L";
   font-size: 24px;
   font-weight: normal;
   line-height: 30px; }
+
+.h3-name {
+  font-size: 21px; }
 
 .dicom-options {
   display: inline-block;
@@ -8598,6 +8609,12 @@ ul {
 a:hover {
   text-decoration: none; }
 
+.ta-c {
+  text-align: center; }
+
+.underline_link {
+  border-bottom: 1px dashed #1aaeec; }
+
 /*!
  * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -8612,6 +8629,7 @@ a:hover {
   transition: all 0.5s ease;
   position: relative;
   min-height: calc(100vh - 60px);
+  height: 100%;
   z-index: 0; }
 
 .wrapper.toggled {
@@ -8625,6 +8643,7 @@ a:hover {
 
 .main {
   min-height: calc(100vh - 200px);
+  height: 100%;
   padding-bottom: 31px; }
   .main:after, .main:before {
     display: table;
@@ -8632,7 +8651,9 @@ a:hover {
     clear: both; }
   .main-content {
     border-right: 1px solid #dadada;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    min-height: calc(100vh - 100px);
+    height: 100%; }
   .main-header {
     padding-bottom: 35px; }
     .main-header .row {
@@ -8689,8 +8710,6 @@ a:hover {
       clear: both; }
     .mail-list__item-trigger i {
       color: #ababab;
-      font-size: 20px;
-      font-size: 2rem;
       margin: 0 8px;
       line-height: 40px;
       line-height: 4rem; }
@@ -8698,6 +8717,8 @@ a:hover {
       margin: 14px 0 14px 20px; }
     .mail-list__item-trigger > div {
       padding-right: 0; }
+    .mail-list__item-trigger-clearback {
+      background: transparent; }
 
 .mail__short-description {
   width: 80%;
@@ -8815,3 +8836,12 @@ a:hover {
     cursor: pointer; }
     .select__department-item:hover {
       background: #eff8fc; }
+
+.instruction {
+  color: #ababab; }
+  .instruction:after, .instruction:before {
+    display: table;
+    content: " ";
+    clear: both; }
+  .instruction p {
+    width: calc( 100% - 40px); }

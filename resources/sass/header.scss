@@ -53,6 +53,10 @@
 	@include font('Roboto L', 24px, normal);
 	line-height: 30px;
 }
+.h3-name{
+	@extend .h1-name;
+	font-size: 21px;
+}
 .dicom-options{
 	display: inline-block;
 	position: relative;

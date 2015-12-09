@@ -41,6 +41,10 @@
 	border: 0;
 	margin-top: 5px;
 }
+.btn-copy{
+	background: white;
+	border: 1px solid $blue-text;
+}
 .text-right{
 	text-align: right;
 }
@@ -48,3 +52,5 @@
 	width: 100%;
 	display: block;
 }
+
+.checkbox{}

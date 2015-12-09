@@ -28,6 +28,12 @@ a{
 		text-decoration: none;
 	}
 }
+.ta-c{
+	text-align: center;
+}
+.underline_link{
+	border-bottom: 1px dashed $blue-text;
+}
 
 /*!
  * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
@@ -43,6 +49,7 @@ a{
     @include transit(.5s);
     position: relative;
     min-height: calc(100vh - 60px);
+    height: 100%;
     z-index: 0;
 }
 
@@ -58,10 +65,13 @@ a{
 .main{
 	@include clearfix();
 	min-height: calc(100vh - 200px);
+	height: 100%;
 	padding-bottom: 31px;
 	&-content{
 		border-right: 1px solid $border-color;
 		box-sizing: border-box;
+		min-height: calc(100vh - 100px);
+		height: 100%;
 	}
 	&-header{
 		padding-bottom: 35px;
@@ -130,7 +140,6 @@ a{
 				border-top: 1px solid $border-color;
 				i{
 					color: $gray-text;
-					@include rem(font-size, 20px);
 					margin: 0 8px;
 					@include rem(line-height, 40px);
 				}
@@ -139,6 +148,9 @@ a{
 				}
 				> div{
 					padding-right: 0;
+				}
+				&-clearback{
+					background: transparent;
 				}
 			}
 		}
@@ -273,5 +285,12 @@ a{
 		&:hover{
 			background: #eff8fc;
 		}
+	}
+}
+.instruction{
+	color: $gray-text;
+	@include clearfix;
+	p{
+		width: calc( 100% - 40px );
 	}
 }

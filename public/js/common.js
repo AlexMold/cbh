@@ -73,3 +73,13 @@ new Chartist.Line('#graphic', {
     right: 50
   }
 });
+
+
+
+
+
+
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
