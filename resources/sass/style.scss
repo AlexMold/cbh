@@ -279,7 +279,7 @@ a{
 			box-shadow: none !important;
 		}
 		&.select__double-arrow div b{
-			background: url(../images) center center no-repeat !important;
+			background: url(../images/double-arrow.png) center center no-repeat !important;
 		}
 	}
 	&-item{
@@ -313,4 +313,43 @@ a{
 }
 .cms__title span{
 	line-height: 20px;
+}
+.row-phone{
+	> div{
+		padding-right: 0;
+	}
+}
+.checkbox-flag{
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	background: url(../images/checkbox-flag.png) center center no-repeat;
+	background-size: cover;
+	margin-bottom: 0;
+	&__label{
+		font-size: 11px;
+		float: left;
+		width: 40px;
+		text-align: center;
+		&.out{
+			display: none;
+		}
+		&.in{
+			display: inline-block;
+		}
+	}
+	&__wrapper{
+		width: 50px;
+		input[type="checkbox"]:checked + .checkbox-flag{
+			background: url(../images/checkbox-flag-active.png) center center no-repeat;
+		}
+		input[type="checkbox"]:checked ~ .checkbox-flag__label{
+			&.in{
+				display: none;
+			}
+			&.out{
+				display: inline-block;
+			}
+		}
+	}
 }

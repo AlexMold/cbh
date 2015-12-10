@@ -85,137 +85,30 @@
           <div class="col-sm-10 main-content">
             <div class="main-header">
               <div class="row">
-                <div class="h3-name">Настройка уведомлений для сайта dicom.technology</div>
+                <div class="h3-name">Настройка отдела продаж для сайта dicom.technology</div>
               </div>
             </div>
             <div class="col-sm-12 row">
-              <p>Настройте режимы оповещения на email и телефон для разных типов уведомлений</p>
-              <table class="table">
-                <thead>
-                  <tr class="active">
-                    <td>Типы уведомлений</td>
-                    <td>E-mail адреса</td>
-                    <td>Телефоны</td>
-                    <td>E-mail</td>
-                    <td>SMS</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Уведомления о принятых звонках</td>
-                    <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">info.dicom@technology_1</option>
-                        <option value="">info.dicom@technology_2</option>
-                        <option value="">info.dicom@technology_3</option>
-                      </select>
-                    </td>
-                    <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">+98456545424</option>
-                        <option value="">+65466521656</option>
-                        <option value="">+56456465486</option>
-                      </select>
-                    </td>
-                    <td>
-                      <label for="email_1" class="checkbox-label">
-                        <input id="email_1" type="checkbox" hidden><span class="checkbox"></span>
-                      </label>
-                    </td>
-                    <td>
-                      <label for="sms_1" class="checkbox-label">
-                        <input id="sms_1" type="checkbox" hidden><span class="checkbox"></span>
-                      </label>
-                    </td>
-                  </tr>
-                  <tr class="unactive">
-                    <td>Уведомления о не принятых звонках</td>
-                    <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">info.dicom@technology_1</option>
-                        <option value="">info.dicom@technology_2</option>
-                        <option value="">info.dicom@technology_3</option>
-                      </select>
-                    </td>
-                    <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">+98456545424</option>
-                        <option value="">+65466521656</option>
-                        <option value="">+56456465486</option>
-                      </select>
-                    </td>
-                    <td>
-                      <label for="email_2" class="checkbox-label">
-                        <input id="email_2" type="checkbox" hidden><span class="checkbox"></span>
-                      </label>
-                    </td>
-                    <td>
-                      <label for="sms_2" class="checkbox-label">
-                        <input id="sms_2" type="checkbox" hidden><span class="checkbox"></span>
-                      </label>
-                    </td>
-                  </tr>
-                  <tr class="unactive">
-                    <td>Уведомления о не принятых звонках</td>
-                    <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">info.dicom@technology_1</option>
-                        <option value="">info.dicom@technology_2</option>
-                        <option value="">info.dicom@technology_3</option>
-                      </select>
-                    </td>
-                    <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">+98456545424</option>
-                        <option value="">+65466521656</option>
-                        <option value="">+56456465486</option>
-                      </select>
-                    </td>
-                    <td>
-                      <label for="email_3" class="checkbox-label">
-                        <input id="email_3" type="checkbox" hidden><span class="checkbox"></span>
-                      </label>
-                    </td>
-                    <td>
-                      <label for="sms_3" class="checkbox-label">
-                        <input id="sms_3" type="checkbox" hidden><span class="checkbox"></span>
-                      </label>
-                    </td>
-                  </tr>
-                  <tr class="unactive">
-                    <td>Уведомления о не принятых звонках</td>
-                    <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">info.dicom@technology_1</option>
-                        <option value="">info.dicom@technology_2</option>
-                        <option value="">info.dicom@technology_3</option>
-                      </select>
-                    </td>
-                    <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">+98456545424</option>
-                        <option value="">+65466521656</option>
-                        <option value="">+56456465486</option>
-                      </select>
-                    </td>
-                    <td>
-                      <label for="email_4" class="checkbox-label">
-                        <input id="email_4" type="checkbox" hidden><span class="checkbox"></span>
-                      </label>
-                    </td>
-                    <td>
-                      <label for="sms_4" class="checkbox-label">
-                        <input id="sms_4" type="checkbox" hidden><span class="checkbox"></span>
-                      </label>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <fieldset class="fieldset">
+                <div class="feildset-label gray-color">Прием звонков</div>
+                <p>Укажите номера телефонов для приема звонков от клиентов. <i class="fa fa-info-circle blue-color"></i></p>
+                <div class="row-phone row">
+                  <div class="phone__input col-sm-3"><input type="text" class="form-control" data-mask="+7(000)000-00-00" data-mask-selectonfocus="true" placeholder="+7(___)___-__-__"></div>
+                  <div class="col-sm-1"><input type="text" class="form-control" data-toggle="tooltip" title="Добавочный"></div>
+                  <div class="col-sm-3"><input type="text" class="form-control" placeholder="Имя менеджера"></div>
+                  <div class="col-sm-5 row">
+                    <div class="col-sm-7"><input type="text" class="form-control pull-left" placeholder="Отдел / филиал"></div>
+                    <div class="checkbox-flag__wrapper pull-left">
+                      <input id="flag_1" type="checkbox" hidden>
+                      <label for="flag_1" class="checkbox-flag"></label>
+                      <span class="checkbox-flag__label out">выкл.</span>
+                      <span class="checkbox-flag__label in">вкл.</span>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
             </div>
             <div class="col-sm-12 row">
-              <br>
-              <br>
-              <br>
               <br>
               <br>
               <button class="btn pull-left gray-color">Назад</button><button class="btn btn-blue pull-right">Далее</button>
@@ -310,6 +203,8 @@
   <script src="../bower_components/chosen/chosen.jquery.min.js"></script>
   <!-- Pnotify JavaScript -->
   <script src="../bower_components/pnotify/dist/pnotify.js"></script>
+  <!-- Mask JavaScript -->
+  <script src="../bower_components/jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
   <!-- Menu Toggle Script -->
   <script src="js/common.js"></script>
 </body>

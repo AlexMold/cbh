@@ -30,12 +30,9 @@ $(".select-item").click(function(e) {
 
 $('.select__department-trigger, .dicom-options__head').chosen({
 	inherit_select_classes: true,
-	width: "190px"
+	width: "190px",
+	disable_search: true
 });
-// $('.width-2').chosen({
-// 	inherit_select_classes: true,
-// 	width: "50%"
-// });
 
 
 

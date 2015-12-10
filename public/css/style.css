@@ -8346,7 +8346,13 @@ button.close {
 
 .checkbox-label {
   position: relative;
-  padding-left: 30px; }
+  padding-left: 30px;
+  min-width: 20px;
+  min-height: 20px; }
+  .checkbox-label:after, .checkbox-label:before {
+    display: table;
+    content: " ";
+    clear: both; }
   .checkbox-label .checkbox {
     position: absolute;
     left: 0;
@@ -8356,9 +8362,9 @@ button.close {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(../images/); }
+    background-image: url(../images/back-checkbox.png); }
   .checkbox-label input[type="checkbox"]:checked + .checkbox {
-    background-image: url(../images/); }
+    background-image: url(../images/back-checkbox-checked.png); }
 
 .footer {
   z-index: 99;
@@ -8848,7 +8854,7 @@ a:hover {
       background: white !important;
       box-shadow: none !important; }
     .select__department-trigger.select__double-arrow div b {
-      background: url(../images) center center no-repeat !important; }
+      background: url(../images/double-arrow.png) center center no-repeat !important; }
   .select__department-item {
     width: 100%;
     padding: 5px 15px;
@@ -8879,3 +8885,31 @@ a:hover {
 
 .cms__title span {
   line-height: 20px; }
+
+.row-phone > div {
+  padding-right: 0; }
+
+.checkbox-flag {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: url(../images/checkbox-flag.png) center center no-repeat;
+  background-size: cover;
+  margin-bottom: 0; }
+  .checkbox-flag__label {
+    font-size: 11px;
+    float: left;
+    width: 40px;
+    text-align: center; }
+    .checkbox-flag__label.out {
+      display: none; }
+    .checkbox-flag__label.in {
+      display: inline-block; }
+  .checkbox-flag__wrapper {
+    width: 50px; }
+    .checkbox-flag__wrapper input[type="checkbox"]:checked + .checkbox-flag {
+      background: url(../images/checkbox-flag-active.png) center center no-repeat; }
+    .checkbox-flag__wrapper input[type="checkbox"]:checked ~ .checkbox-flag__label.in {
+      display: none; }
+    .checkbox-flag__wrapper input[type="checkbox"]:checked ~ .checkbox-flag__label.out {
+      display: inline-block; }
