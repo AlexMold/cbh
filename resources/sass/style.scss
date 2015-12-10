@@ -28,6 +28,12 @@ a{
 		text-decoration: none;
 	}
 }
+.ta-c{
+	text-align: center;
+}
+.underline_link{
+	border-bottom: 1px dashed $blue-text;
+}
 
 /*!
  * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
@@ -43,6 +49,7 @@ a{
     @include transit(.5s);
     position: relative;
     min-height: calc(100vh - 60px);
+    height: 100%;
     z-index: 0;
 }
 
@@ -58,10 +65,13 @@ a{
 .main{
 	@include clearfix();
 	min-height: calc(100vh - 200px);
+	height: 100%;
 	padding-bottom: 31px;
 	&-content{
 		border-right: 1px solid $border-color;
 		box-sizing: border-box;
+		min-height: calc(100vh - 100px);
+		height: 100%;
 	}
 	&-header{
 		padding-bottom: 35px;
@@ -130,7 +140,6 @@ a{
 				border-top: 1px solid $border-color;
 				i{
 					color: $gray-text;
-					@include rem(font-size, 20px);
 					margin: 0 8px;
 					@include rem(line-height, 40px);
 				}
@@ -139,6 +148,9 @@ a{
 				}
 				> div{
 					padding-right: 0;
+				}
+				&-clearback{
+					background: transparent;
 				}
 			}
 		}
@@ -255,15 +267,19 @@ a{
 	&-trigger{
 		background: url(../images/ico-arrow-down.png) 95% center no-repeat;
 		position: relative;
-		padding: 5px 15px;
+		padding: 5px 0 5px 15px;
 		a.chosen-single{
 			font-family: 'Roboto L';
 			font-size: 1.4rem;
+			margin: 0;
 			padding: 0 !important;
 			border: 0 !important;
 			width: 100% !important;
 			background: white !important;
 			box-shadow: none !important;
+		}
+		&.select__double-arrow div b{
+			background: url(../images) center center no-repeat !important;
 		}
 	}
 	&-item{
@@ -274,4 +290,27 @@ a{
 			background: #eff8fc;
 		}
 	}
+}
+.instruction{
+	color: $gray-text;
+	@include clearfix;
+	p{
+		width: calc( 100% - 40px );
+	}
+}
+
+.install__widget-wrapper{
+	position: relative;
+}
+.cms__widget-popup{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: white;
+	box-shadow: .5px .5px 1px $gray-text;
+	padding: 20px 10px;
+}
+.cms__title span{
+	line-height: 20px;
 }

@@ -12,6 +12,8 @@
   <link href="css/style.css" rel="stylesheet">
   <!-- Chosen default styles -->
   <link href="../bower_components/chosen/chosen.min.css" rel="stylesheet">
+  <!-- Pnotify styles -->
+  <link href="../bower_components/pnotify/dist/pnotify.css" rel="stylesheet">
 </head>
 
 <body>
@@ -83,93 +85,154 @@
           <div class="col-sm-10 main-content">
             <div class="main-header">
               <div class="row">
-                <div class="h1-name">Служба поддержки</div>
+                <div class="h3-name">Настройка уведомлений для сайта dicom.technology</div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <p>Выберите отдел:</p>
-                <div class="row">
-                  <div class="select__department col-sm-7">
-                    <select class="select__department-trigger form-control">
-                      <option class="select__department-item select-item2">
-                        Разработки
-                      </option>
-                      <option class="select__department-item select-item2">
-                        Менеджмент
-                      </option>
-                      <option class="select__department-item select-item2">
-                        Директор
-                      </option>
-                    </select>
-                  </div>
-                </div>
-                <br>
-                <input type="text" class="form-control" placeholder="Тема сообщения">
-                <br>
-                <textarea class="form-control" rows="4" placeholder="Ваш вопрос..."></textarea>
-                <br>
-                <a href="#" class="btn btn-blue pull-right">Отправить</a>
-              </div>
+            <div class="col-sm-12 row">
+              <p>Настройте режимы оповещения на email и телефон для разных типов уведомлений</p>
+              <table class="table">
+                <thead>
+                  <tr class="active">
+                    <td>Типы уведомлений</td>
+                    <td>E-mail адреса</td>
+                    <td>Телефоны</td>
+                    <td>E-mail</td>
+                    <td>SMS</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Уведомления о принятых звонках</td>
+                    <td>
+                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                        <option value="">info.dicom@technology_1</option>
+                        <option value="">info.dicom@technology_2</option>
+                        <option value="">info.dicom@technology_3</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                        <option value="">+98456545424</option>
+                        <option value="">+65466521656</option>
+                        <option value="">+56456465486</option>
+                      </select>
+                    </td>
+                    <td>
+                      <label for="" class="checkbox-label">
+                        <input type="checkbox" hidden><span class="checkbox"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <label for="" class="checkbox-label">
+                        <input type="checkbox" hidden><span class="checkbox"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr class="unactive">
+                    <td>Уведомления о не принятых звонках</td>
+                    <td>
+                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                        <option value="">info.dicom@technology_1</option>
+                        <option value="">info.dicom@technology_2</option>
+                        <option value="">info.dicom@technology_3</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                        <option value="">+98456545424</option>
+                        <option value="">+65466521656</option>
+                        <option value="">+56456465486</option>
+                      </select>
+                    </td>
+                    <td>
+                      <label for="" class="checkbox-label">
+                        <input type="checkbox" hidden><span class="checkbox"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <label for="" class="checkbox-label">
+                        <input type="checkbox" hidden><span class="checkbox"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr class="unactive">
+                    <td>Уведомления о не принятых звонках</td>
+                    <td>
+                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                        <option value="">info.dicom@technology_1</option>
+                        <option value="">info.dicom@technology_2</option>
+                        <option value="">info.dicom@technology_3</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                        <option value="">+98456545424</option>
+                        <option value="">+65466521656</option>
+                        <option value="">+56456465486</option>
+                      </select>
+                    </td>
+                    <td>
+                      <label for="" class="checkbox-label">
+                        <input type="checkbox" hidden><span class="checkbox"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <label for="" class="checkbox-label">
+                        <input type="checkbox" hidden><span class="checkbox"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr class="unactive">
+                    <td>Уведомления о не принятых звонках</td>
+                    <td>
+                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                        <option value="">info.dicom@technology_1</option>
+                        <option value="">info.dicom@technology_2</option>
+                        <option value="">info.dicom@technology_3</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                        <option value="">+98456545424</option>
+                        <option value="">+65466521656</option>
+                        <option value="">+56456465486</option>
+                      </select>
+                    </td>
+                    <td>
+                      <label for="" class="checkbox-label">
+                        <input type="checkbox" hidden><span class="checkbox"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <label for="" class="checkbox-label">
+                        <input type="checkbox" hidden><span class="checkbox"></span>
+                      </label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <br>
-            <br>
-            <table class="table">
-              <thead>
-                <tr class="active">
-                  <td>Номер</td>
-                  <td>Тема обращения</td>
-                  <td>Статус</td>
-                  <td>Отдел</td>
-                  <td>Дата, время</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1635</td>
-                  <td>Пришлите закрывающие документы</td>
-                  <td>Ожидает ответа</td>
-                  <td>Бухгалтерия</td>
-                  <td>11.10.2015, 12:37</td>
-                </tr>
-                <tr class="unactive">
-                  <td>1635</td>
-                  <td>Пришлите закрывающие документы</td>
-                  <td>Закрыт</td>
-                  <td>Бухгалтерия</td>
-                  <td>11.10.2015, 12:37</td>
-                </tr>
-                <tr class="unactive">
-                  <td>1635</td>
-                  <td>Пришлите закрывающие документы</td>
-                  <td>Закрыт</td>
-                  <td>Бухгалтерия</td>
-                  <td>11.10.2015, 12:37</td>
-                </tr>
-                <tr class="unactive">
-                  <td>1635</td>
-                  <td>Пришлите закрывающие документы</td>
-                  <td>Закрыт</td>
-                  <td>Бухгалтерия</td>
-                  <td>11.10.2015, 12:37</td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            <div class="col-sm-12 row">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <button class="btn pull-left gray-color">Назад</button><button class="btn btn-blue pull-right">Далее</button>
+            </div>
           </div>
           <div class="aside-menu col-sm-2">
             <ul>
-              <li class="aside-menu__item"><a href="#">Служба поддержки</a></li>
-              <li class="aside-menu__item"><a href="#">Часто задаваемые вопросы</a></li>
+              <li class="aside-menu__item"><a href="#">Подключение</a></li>
+              <li class="aside-menu__item active"><a href="#">Уведомление</a></li>
+              <li class="aside-menu__item"><a href="#">Отдел продаж</a></li>
+              <li class="aside-menu__item"><a href="#">Внешний вид</a></li>
+              <li class="aside-menu__item"><a href="#">Параметры</a></li>
             </ul>
           </div>
           <div class="info-box__trigger toggled">Обновления CallbackHunter</div>
           <div class="info-box hidden">
-            <div class="info-box__close">x</div>
+            <i class="info-box__close fa fa-times"></i>
             <div class="container-fluid">
               <div class="col-sm-2"><img src="images/logo.png" alt="test" class="info-box__image"></div>
               <div class="col-sm-10">

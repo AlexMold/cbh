@@ -13,7 +13,7 @@
 		<link href="../bower_components/chosen/chosen.min.css" rel="stylesheet">
 	</head>
 
-	<body charset="utf-8">
+	<body>
 
 			<div class="wrapper toggled">
 
@@ -57,14 +57,7 @@
 								<header class="header" role="header">
 									<div class="row">
 										<div class="col-sm-5">
-											<div class="h1-name">Отчеты</div>
-											<div class="dicom-options">
-												<select class="dicom-options__head">
-													<option class="dicom-options__item">dicom.tehnology</option>
-													<option class="dicom-options__item">Dolorem.</option>
-													<option class="dicom-options__item">Dolor!</option>
-												</select>
-											</div>
+											<div class="h1-name">Виджеты</div>
 										</div>
 										<div class="col-sm-4">
 											<div class="header__contact">Ваш менеджер Иван <br>+ 7(495) 777-88-00 (263)</div>
@@ -84,41 +77,31 @@
 									</div>
 								</header>
 								<div class="header__banner row">
-                  <p class="pull-left">Получите  за каждого друга, приведенного по ссылке <a href="http://cbh.com/dicom.technology">http://cbh.com/dicom.technology</a></p>
+                  <p class="pull-left">Получите  за каждого друга, приведенного по ссылке <a href="#">http://cbh.com/dicom.technology</a></p>
                   <p class="pull-right">Баланс 88716 минут до 10.10.2035</p>
                 </div>	
 
 								<main class="main">
 									<div class="main-header">
-										<div class="h1-name">Статистика виджета для сайта dicom-tehnology</div>
-										<br><br>
 										<div class="row">
-											<div class="days-navigation btn-group">
-													<input type="radio" id="time_1" class="radio-nav" hidden>
-													<label for="time_1" class="days-navigation__label btn btn-default first">В будущем
-													</label>
-													<input type="radio" id="time_2" class="radio-nav" hidden>
-													<label for="time_2" class="days-navigation__label btn btn-default">Сегодня
-													</label>
-													<input type="radio" id="time_3" class="radio-nav" hidden>
-													<label for="time_3" class="days-navigation__label btn btn-default">Вчера
-													</label>
-													<input type="radio" id="time_4" class="radio-nav" hidden>
-													<label for="time_4" class="days-navigation__label btn btn-default">Неделя
-													</label>
-													<input type="radio" id="time_5" class="radio-nav" hidden>
-													<label for="time_5" class="days-navigation__label btn btn-default">Месяц
-													</label>
-													<input type="radio" id="time_6" class="radio-nav" hidden>
-													<label for="time_6" class="days-navigation__label btn btn-default last">Период
-													</label>
+											<div class="pull-left">
+												<p>Добавить виджет для нового сайта:</p>
+												<div class="form-inline">
+													<input type="text" class="form-control" placeholder="http://getbootstrap.com/"> &nbsp;
+													<input type="button" class="btn btn-blue" value="Добавить">
+												</div>
 											</div>
-										</div>
-										<br>
-										<div class="row">
-											<p>Посещаемость сайта</p>
-											<div id="graphic">
-												
+
+											<div class="right-search col-sm-4 pull-right">
+											<br>
+												<div class="input-group col-sm-7 pull-right">
+				                    <input type="text" class="form-control right-search__input" placeholder="" >
+				                    <span class="input-group-addon right-search__button-wrapper">
+			                        <button type="submit" class="right-search__button">
+		                            <span class="fa fa-search gray-color"></span>
+			                        </button>  
+				                    </span>
+				                </div>
 											</div>
 										</div>
 									</div>
@@ -127,65 +110,48 @@
 
 											<li class="mail-list__item mail-list__item-header row">
 												<div class="mail-trigger">
-													<div class="col-sm-2"><span class="mail-identity">Дата</span>
+													<div class="col-sm-2">
+														URL виджета
 													</div>
 													<div class="col-sm-2">
-														Посетители
+														Номер переадресации
 													</div>
-													<div class="col-sm-1">
-														Показы
+													<div class="col-sm-3">
+														E-mail для уведомлений
 													</div>
-													<div class="col-sm-1">
-														Звонки
+													<div class="col-sm-2">
+														Состояние виджета
 													</div>
-													<div class="col-sm-5">
-														Чаты
-													</div>
-													<div class="col-sm-1">
-														<a href="#" class="active pull-right"><i class="fa fa-file-excel-o"></i></a>
-						                <a href="#" class="active pull-right"><i class="fa fa-file-code-o"></i></a>
+													<div class="col-sm-3 ta-c">
+														Параметры виджета
 													</div>
 
 												</div>
 											</li>
 
 											<li class="mail-list__item row">
-												<div class="mail-list__item-trigger mail-trigger">
-													<div class="col-sm-2"><span class="mail-identity">11.10.2016</span>
+												<div class="mail-list__item-trigger mail-list__item-trigger-clearback mail-trigger">
+													<div class="col-sm-2">
+														dicom.technology
 													</div>
 													<div class="col-sm-2">
-														987
+														+79643894363 ...
 													</div>
-													<div class="col-sm-1">
-														798
-													</div>
-													<div class="col-sm-1">
-														21
-													</div>
-													<div class="col-sm-6">
-														11
-													</div>
-
-												</div>
-
-												<div class="mail-list__item-content" hidden>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nostrum distinctio iste provident minus perspiciatis earum nulla error culpa, tempora hic accusamus repellat aperiam libero qui deserunt veniam in tempore! Dicta, mollitia voluptatibus inventore animi ut, asperiores vel! Veritatis a doloremque eligendi hic cumque quasi distinctio fugiat similique, blanditiis animi!</div>
-											</li>
-
-											<li class="mail-list__item row">
-												<div class="mail-list__item-trigger mail-trigger">
-													<div class="col-sm-2"><span class="mail-identity">11.10.2016</span>
+													<div class="col-sm-3">
+														info@dicom.technology ...
 													</div>
 													<div class="col-sm-2">
-														987
+														Виджет установлен
 													</div>
-													<div class="col-sm-1">
-														798
-													</div>
-													<div class="col-sm-1">
-														21
-													</div>
-													<div class="col-sm-6">
-														11
+													<div class="col-sm-3">
+														<div class="form-inline col-sm-9 pull-left">
+															<a class="pull-right" href="#"><i class="fa fa-bar-chart pull-right blue-color fa-lg"></i></a>
+															<a class="pull-right" data-toggle="tooltip" data-placement="bottom" title="Редактировать" href="#"><i class="fa fa-pencil pull-right blue-color fa-lg"></i></a>
+															<a class="pull-right" href="#"><i class="fa fa-play pull-right fa-lg"></i></a>
+														</div>
+														<div class="form-inline col-sm-3 pull-left">
+															<a class="pull-right" data-toggle="tooltip" data-placement="bottom" title="Удалить" href="#"><i class="fa fa-trash-o pull-right fa-lg"></i></a>
+														</div>
 													</div>
 
 												</div>
@@ -194,20 +160,57 @@
 											</li>
 
 											<li class="mail-list__item row">
-												<div class="mail-list__item-trigger mail-trigger">
-													<div class="col-sm-2"><span class="mail-identity">11.10.2016</span>
+												<div class="mail-list__item-trigger mail-list__item-trigger-clearback mail-trigger">
+													<div class="col-sm-2">
+														sdf.dicom.technology
 													</div>
 													<div class="col-sm-2">
-														987
+														+79643894363 ...
 													</div>
-													<div class="col-sm-1">
-														798
+													<div class="col-sm-3">
+														info@dicom.technology ...
 													</div>
-													<div class="col-sm-1">
-														21
+													<div class="col-sm-2 red-color">
+														Виджет не установлен
 													</div>
-													<div class="col-sm-6">
-														11
+													<div class="col-sm-3">
+														<div class="form-inline col-sm-9 pull-left">
+															<a class="pull-right" href="#"><i class="fa fa-bar-chart pull-right blue-color fa-lg"></i></a>
+															<a class="pull-right" data-toggle="tooltip" data-placement="bottom" title="Редактировать" href="#"><i class="fa fa-pencil pull-right fa-lg"></i></a>
+														</div>
+														<div class="form-inline col-sm-3 pull-left">
+															<a class="pull-right" data-toggle="tooltip" data-placement="bottom" title="Удалить" href="#"><i class="fa fa-trash-o pull-right fa-lg"></i></a>
+														</div>
+													</div>
+
+												</div>
+
+												<div class="mail-list__item-content" hidden>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nostrum distinctio iste provident minus perspiciatis earum nulla error culpa, tempora hic accusamus repellat aperiam libero qui deserunt veniam in tempore! Dicta, mollitia voluptatibus inventore animi ut, asperiores vel! Veritatis a doloremque eligendi hic cumque quasi distinctio fugiat similique, blanditiis animi!</div>
+											</li>
+
+											<li class="mail-list__item row">
+												<div class="mail-list__item-trigger mail-list__item-trigger-clearback mail-trigger">
+													<div class="col-sm-2">
+														sdf.dicom.technology
+													</div>
+													<div class="col-sm-2">
+														+79643894363 ...
+													</div>
+													<div class="col-sm-3">
+														info@dicom.technology ...
+													</div>
+													<div class="col-sm-2">
+														Виджет установлен
+													</div>
+													<div class="col-sm-3">
+														<div class="form-inline col-sm-9 pull-left">
+															<a class="pull-right" href="#"><i class="fa fa-bar-chart pull-right blue-color fa-lg"></i></a>
+															<a class="pull-right" data-toggle="tooltip" data-placement="bottom" title="Редактировать" href="#"><i class="fa fa-pencil pull-right fa-lg"></i></a>
+															<a class="pull-right" href="#"><i class="fa fa-pause green-color pull-right fa-lg"></i></a>
+														</div>
+														<div class="form-inline col-sm-3 pull-left">
+															<a class="pull-right" data-toggle="tooltip" data-placement="bottom" title="Удалить" href="#"><i class="fa fa-trash-o pull-right fa-lg"></i></a>
+														</div>
 													</div>
 
 												</div>
@@ -219,7 +222,7 @@
                   </div>
 									<div class="info-box__trigger toggled">Обновления CallbackHunter</div>
 									<div class="info-box hidden">
-										<div class="info-box__close">x</div>
+										<i class="info-box__close fa fa-times"></i>
 										<div class="container-fluid">
 											<div class="col-sm-2"><img src="images/logo.png" alt="test" class="info-box__image"></div>
 											<div class="col-sm-10">
@@ -285,7 +288,6 @@
 				</footer>
 					<!-- END Footer PART -->
 
-
   <!-- jQuery -->
   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap Core JavaScript -->
@@ -298,6 +300,6 @@
   <script src="../bower_components/pnotify/dist/pnotify.js"></script>
   <!-- Menu Toggle Script -->
   <script src="js/common.js"></script>
-
+		
 	</body>
 </html>

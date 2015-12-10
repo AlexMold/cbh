@@ -12,6 +12,8 @@
   <link href="css/style.css" rel="stylesheet">
   <!-- Chosen default styles -->
   <link href="../bower_components/chosen/chosen.min.css" rel="stylesheet">
+  <!-- Pnotify styles -->
+  <link href="../bower_components/pnotify/dist/pnotify.css" rel="stylesheet">
 </head>
 
 <body>
@@ -83,93 +85,78 @@
           <div class="col-sm-10 main-content">
             <div class="main-header">
               <div class="row">
-                <div class="h1-name">Служба поддержки</div>
+                <div class="h3-name">Подключение виджета на сайт &nbsp;<a class="underline_link" href="#">dicom.technology</a>&nbsp;<i class="fa fa-pencil blue-color"></i></div>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6">
-                <p>Выберите отдел:</p>
-                <div class="row">
-                  <div class="select__department col-sm-7">
-                    <select class="select__department-trigger form-control">
-                      <option class="select__department-item select-item2">
-                        Разработки
-                      </option>
-                      <option class="select__department-item select-item2">
-                        Менеджмент
-                      </option>
-                      <option class="select__department-item select-item2">
-                        Директор
-                      </option>
-                    </select>
-                  </div>
+                <p>Просто установите код виджета на все страницы вашего сайта:</p>
+                <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Some code"></textarea>
+                <br>
+                <button class="btn btn-block btn-copy">Скопировать в буфер</button>
+                <br><br>
+                <div class="instruction">
+                  <i class="fa fa-info-circle fa-2x pull-left"></i>
+                  <p class="pull-left">Код виджета можно устанавливать в любое место<br>HTML-кода перед закрывающим тегом &lt;/body&gt;.</p>
                 </div>
                 <br>
-                <input type="text" class="form-control" placeholder="Тема сообщения">
-                <br>
-                <textarea class="form-control" rows="4" placeholder="Ваш вопрос..."></textarea>
-                <br>
-                <a href="#" class="btn btn-blue pull-right">Отправить</a>
+                <p>Для вызова виджета используйте такую ссылку:</p>
+                <input type="text" class="form-control" placeholder="dicom.technology#callbackhunter">
+              </div>
+              <div class="col-sm-6">
+                <div class="install__widget-wrapper">
+                  <a class="js-call__popup" href="#">Мне нужна помощь<br>в установке кода!</a>
+                  <div class="cms__widget-popup hidden">
+                    <i class="info-box__close fa fa-times gray-color"></i>
+                    <p>Видеоинструкция по установке кода на сайт:</p>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>UMI CMS</span></a></div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>Joomla</span></a></div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>Wordpress</span></a></div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>WIX</span></a></div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>1C Bitrix</span></a></div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>Еще...</span></a></div>
+                      </div>
+                    </div>
+                    <br>
+                    <p>Отправить код своему программисту:</p>
+                    <div class="form-inline">
+                      <input type="email" class="form-control" placeholder="Введите email своего программиста">   &nbsp;
+                      <input type="submit" class="btn js-pnotify">
+                    </div>
+                    <br>
+                    <a href="#" class="underline_link">Хочу, чтобы сотрудники CallbackHunter сами<br>установили код виджета бесплатно</a>
+                  </div>
+                </div>
               </div>
             </div>
-            <br>
-            <br>
-            <table class="table">
-              <thead>
-                <tr class="active">
-                  <td>Номер</td>
-                  <td>Тема обращения</td>
-                  <td>Статус</td>
-                  <td>Отдел</td>
-                  <td>Дата, время</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1635</td>
-                  <td>Пришлите закрывающие документы</td>
-                  <td>Ожидает ответа</td>
-                  <td>Бухгалтерия</td>
-                  <td>11.10.2015, 12:37</td>
-                </tr>
-                <tr class="unactive">
-                  <td>1635</td>
-                  <td>Пришлите закрывающие документы</td>
-                  <td>Закрыт</td>
-                  <td>Бухгалтерия</td>
-                  <td>11.10.2015, 12:37</td>
-                </tr>
-                <tr class="unactive">
-                  <td>1635</td>
-                  <td>Пришлите закрывающие документы</td>
-                  <td>Закрыт</td>
-                  <td>Бухгалтерия</td>
-                  <td>11.10.2015, 12:37</td>
-                </tr>
-                <tr class="unactive">
-                  <td>1635</td>
-                  <td>Пришлите закрывающие документы</td>
-                  <td>Закрыт</td>
-                  <td>Бухгалтерия</td>
-                  <td>11.10.2015, 12:37</td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
           </div>
           <div class="aside-menu col-sm-2">
             <ul>
-              <li class="aside-menu__item"><a href="#">Служба поддержки</a></li>
-              <li class="aside-menu__item"><a href="#">Часто задаваемые вопросы</a></li>
+              <li class="aside-menu__item active"><a href="#">Подключение</a></li>
+              <li class="aside-menu__item"><a href="#">Уведомление</a></li>
+              <li class="aside-menu__item"><a href="#">Отдел продаж</a></li>
+              <li class="aside-menu__item"><a href="#">Внешний вид</a></li>
+              <li class="aside-menu__item"><a href="#">Параметры</a></li>
             </ul>
           </div>
           <div class="info-box__trigger toggled">Обновления CallbackHunter</div>
           <div class="info-box hidden">
-            <div class="info-box__close">x</div>
+            <i class="info-box__close fa fa-times"></i>
             <div class="container-fluid">
               <div class="col-sm-2"><img src="images/logo.png" alt="test" class="info-box__image"></div>
               <div class="col-sm-10">

@@ -28,24 +28,51 @@ $(".select-item").click(function(e) {
 		$(this).parent('ul').toggle('hidden');
 });
 
-$('.select__department-trigger, .dicom-options__head').chosen({inherit_select_classes: true});
+$('.select__department-trigger, .dicom-options__head').chosen({
+	inherit_select_classes: true,
+	width: "190px"
+});
+// $('.width-2').chosen({
+// 	inherit_select_classes: true,
+// 	width: "50%"
+// });
+
+
 
 
 $(".info-box__trigger").click(function(e) {
 		e.preventDefault();
 		$(this).siblings('.info-box').removeClass('hidden');
 });
+$(".js-call__popup").click(function(e) {
+		e.preventDefault();
+		$(this).siblings('.cms__widget-popup').removeClass('hidden');
+});
+
 $(".info-box__close").click(function(e) {
 		e.preventDefault();
-		$(this).parent('.info-box').addClass('hidden');
+		$(this).parent().addClass('hidden');
 });
+
+
 
 $(".aside-menu__item").click(function(e) {
 		e.preventDefault();
 		$(this).toggleClass('active');
 });
 
-
+$(".js-pnotify").click(function(){
+    PNotify.prototype.options.styling = "fontawesome";
+	new PNotify({
+	    text: 'Сообщение отправлено!',
+	    type: 'success',
+	    width: "auto",
+	    hide: true,
+	    delay: 2000,
+	    icon: false,
+	    stack: {"dir1": "down", "dir2": "left", "push": "top", "firstpos1": 110, "firstpos2": 0}
+	});
+})
 
     $(function() {
       var caption = $(".mail-list__item").find(".mail-trigger"),
@@ -73,3 +100,13 @@ new Chartist.Line('#graphic', {
     right: 50
   }
 });
+
+
+
+
+
+
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

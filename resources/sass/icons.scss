@@ -15,15 +15,19 @@
 		background-image: url(../images/flag-ua.png);
 	}
 }
+.red-color,
 .fa.red-color{
 	color: #d24949;
 }
+.gray-color,
 .fa.gray-color{
 	color: $gray-text;
 }
+.green-color,
 .fa.green-color{
 	color: #43b828;
 }
+.blue-color,
 .fa.blue-color{
 	color: $blue-text;
 }
