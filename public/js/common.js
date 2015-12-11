@@ -30,10 +30,48 @@ $(".select-item").click(function(e) {
 
 $('.select__department-trigger, .dicom-options__head').chosen({
 	inherit_select_classes: true,
-	width: "190px",
 	disable_search: true
 });
 
+$('.select__add-element').multipleSelect({
+	width: 190,
+	selectAll: false,
+	placeholder: "Выберите что нибудь",
+	onUncheckAll: true
+});
+$('.ms-drop input').on('click', function(){
+	if($(this).prop("checked")){
+		$(this).addClass('checkbox__marked');
+	};
+	$(this).parent().parent('li').toggleClass('checkbox__marked');
+});
+
+
+// $("#refreshAdd").click(function() {
+//     var $select = $("select"),
+//         $input = $("#refreshInput"),
+//         value = $.trim($input.val()),
+//         $opt = $("<option />", {
+//             value: value,
+//             text: value
+//         });
+//     $input.val("");
+//     $(this).find('.ms-drop ul').append($opt).multipleSelect("refresh");
+// });
+// $(function() {
+//     $('.ms-drop ul').append($('.form__add-element'));
+// });
+	
+
+$('.row-phone .js__delete-row').on('click', function(){
+	$(this).parent('.row-phone').hide();
+});
+
+$('.js__add-row').on('click', function(e){
+	e.preventDefault();
+	// var innerRow = $(this).parent().parent($('.row-phone'));
+	var innerH = $('.fieldset').append($('.row-phone').html());
+});
 
 
 

@@ -12,6 +12,8 @@
   <link href="css/style.css" rel="stylesheet">
   <!-- Chosen default styles -->
   <link href="../bower_components/chosen/chosen.min.css" rel="stylesheet">
+  <!-- Select plugin styles -->
+  <link href="../bower_components/multiple-select/multiple-select.css" rel="stylesheet">
   <!-- Pnotify styles -->
   <link href="../bower_components/pnotify/dist/pnotify.css" rel="stylesheet">
 </head>
@@ -104,15 +106,19 @@
                   <tr>
                     <td>Уведомления о принятых звонках</td>
                     <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">info.dicom@technology_1</option>
+                      <!-- <li class="form__add-element form-inline">
+                        <input id="refreshInput" type="text" required="required" class="form-control" />
+                        <i class="fa fa-plus" id="refreshAdd"></i>
+                      </li> -->
+                      <select name="" id="" class="select__add-element form-control select__double-arrow">
+                        <option class="checkbox__marked" value="">info.dicom@technology_1</option>
                         <option value="">info.dicom@technology_2</option>
                         <option value="">info.dicom@technology_3</option>
                       </select>
                     </td>
                     <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">+98456545424</option>
+                      <select name="" id="" class="select__add-element form-control select__double-arrow">
+                        <option class="checkbox__marked" value="">+98456545424</option>
                         <option value="">+65466521656</option>
                         <option value="">+56456465486</option>
                       </select>
@@ -131,15 +137,15 @@
                   <tr class="unactive">
                     <td>Уведомления о не принятых звонках</td>
                     <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">info.dicom@technology_1</option>
+                      <select name="" id="" class="select__add-element form-control select__double-arrow">
+                        <option class="checkbox__marked" value="">info.dicom@technology_1</option>
                         <option value="">info.dicom@technology_2</option>
                         <option value="">info.dicom@technology_3</option>
                       </select>
                     </td>
                     <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">+98456545424</option>
+                      <select name="" id="" class="select__add-element form-control select__double-arrow">
+                        <option class="checkbox__marked" value="">+98456545424</option>
                         <option value="">+65466521656</option>
                         <option value="">+56456465486</option>
                       </select>
@@ -158,15 +164,15 @@
                   <tr class="unactive">
                     <td>Уведомления о не принятых звонках</td>
                     <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">info.dicom@technology_1</option>
+                      <select name="" id="" class="select__add-element form-control select__double-arrow">
+                        <option class="checkbox__marked" value="">info.dicom@technology_1</option>
                         <option value="">info.dicom@technology_2</option>
                         <option value="">info.dicom@technology_3</option>
                       </select>
                     </td>
                     <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">+98456545424</option>
+                      <select name="" id="" class="select__add-element form-control select__double-arrow">
+                        <option class="checkbox__marked" value="">+98456545424</option>
                         <option value="">+65466521656</option>
                         <option value="">+56456465486</option>
                       </select>
@@ -185,15 +191,15 @@
                   <tr class="unactive">
                     <td>Уведомления о не принятых звонках</td>
                     <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">info.dicom@technology_1</option>
+                      <select name="" id="" class="select__add-element form-control select__double-arrow">
+                        <option class="checkbox__marked" value="">info.dicom@technology_1</option>
                         <option value="">info.dicom@technology_2</option>
                         <option value="">info.dicom@technology_3</option>
                       </select>
                     </td>
                     <td>
-                      <select name="" id="" class="select__department-trigger form-control select__double-arrow">
-                        <option value="">+98456545424</option>
+                      <select name="" id="" class="select__add-element form-control select__double-arrow">
+                        <option class="checkbox__marked" value="">+98456545424</option>
                         <option value="">+65466521656</option>
                         <option value="">+56456465486</option>
                       </select>
@@ -308,6 +314,8 @@
   <script src="../bower_components/chartist-js/dist/chartist.min.js"></script>
   <!-- Chosen JavaScript -->
   <script src="../bower_components/chosen/chosen.jquery.min.js"></script>
+  <!-- Multiple select JavaScript -->
+  <script src="../bower_components/multiple-select/multiple-select.js"></script>
   <!-- Pnotify JavaScript -->
   <script src="../bower_components/pnotify/dist/pnotify.js"></script>
   <!-- Menu Toggle Script -->

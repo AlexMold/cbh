@@ -8278,6 +8278,14 @@ button.close {
 .fa.blue-color {
   color: #1aaeec; }
 
+.row-phone__close {
+  position: absolute;
+  left: -5px;
+  top: 7px;
+  font-size: 20px;
+  z-index: 5;
+  cursor: pointer; }
+
 .radio-nav:checked + label {
   background: #cce8f4; }
 
@@ -8348,7 +8356,9 @@ button.close {
   position: relative;
   padding-left: 30px;
   min-width: 20px;
-  min-height: 20px; }
+  min-height: 20px;
+  line-height: 40px;
+  font-family: 'Roboto L'; }
   .checkbox-label:after, .checkbox-label:before {
     display: table;
     content: " ";
@@ -8691,6 +8701,13 @@ a:hover {
   .days-navigation__label:not(:first-child):not(:last-child) {
     border-right: 0; }
 
+.week-days__label {
+  padding: 4px 3px;
+  border-radius: 0;
+  float: left;
+  margin-top: -4px;
+  margin-right: 2px; }
+
 .mail-filter {
   display: inline-block;
   float: left;
@@ -8839,7 +8856,8 @@ a:hover {
   padding: 0 10px; }
 
 .select__department {
-  font-family: 'Roboto L'; }
+  font-family: 'Roboto L';
+  width: auto !important; }
   .select__department-trigger {
     background: url(../images/ico-arrow-down.png) 95% center no-repeat;
     position: relative;
@@ -8861,6 +8879,28 @@ a:hover {
     cursor: pointer; }
     .select__department-item:hover {
       background: #eff8fc; }
+
+.select__add-element {
+  font-family: 'Roboto L';
+  padding: 0; }
+  .select__add-element .ms-choice {
+    border: 0;
+    height: 32px;
+    line-height: 32px; }
+    .select__add-element .ms-choice > span {
+      left: 7px; }
+    .select__add-element .ms-choice > div {
+      background: url(../images/double-arrow.png) center 10px no-repeat; }
+      .select__add-element .ms-choice > div.open {
+        background: url(../images/double-arrow.png) center 10px no-repeat; }
+  .select__add-element .ms-drop ul {
+    padding: 0; }
+  .select__add-element .ms-drop li {
+    padding: 3px 10px; }
+  .select__add-element .ms-drop input[type="checkbox"] {
+    display: none; }
+  .select__add-element .ms-drop .checkbox__marked {
+    background: url(../images/custom-check.png) 97% 40% no-repeat; }
 
 .instruction {
   color: #ababab; }
@@ -8885,6 +8925,17 @@ a:hover {
 
 .cms__title span {
   line-height: 20px; }
+
+.fieldset {
+  position: relative;
+  padding: 20px 30px;
+  border: 1px solid #dadada; }
+  .fieldset-label {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    padding: 5px 10px;
+    background: white; }
 
 .row-phone > div {
   padding-right: 0; }
@@ -8913,3 +8964,15 @@ a:hover {
       display: none; }
     .checkbox-flag__wrapper input[type="checkbox"]:checked ~ .checkbox-flag__label.out {
       display: inline-block; }
+
+.row-phone {
+  position: relative; }
+
+.phone__input {
+  position: relative; }
+  .phone__input-check {
+    position: absolute;
+    top: 7px;
+    right: 3px; }
+  .phone__input-days {
+    width: 195px; }

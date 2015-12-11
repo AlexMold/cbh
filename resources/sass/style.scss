@@ -80,6 +80,7 @@ a{
 		}
 	}
 }
+
 .days-navigation{
 	float: left;
 	display: inline-block;
@@ -94,6 +95,13 @@ a{
 			border-right: 0;
 		}
 	}
+}
+.week-days__label{
+	padding: 4px 3px;
+	border-radius: 0;
+	float: left;
+	margin-top: -4px;
+	margin-right: 2px;
 }
 .mail{
 	&-filter{
@@ -264,6 +272,7 @@ a{
 }
 .select__department{
 	font-family: 'Roboto L';
+	width: auto !important;
 	&-trigger{
 		background: url(../images/ico-arrow-down.png) 95% center no-repeat;
 		position: relative;
@@ -291,6 +300,40 @@ a{
 		}
 	}
 }
+.select__add-element{
+	font-family: 'Roboto L';
+	padding: 0;
+	.ms-choice{
+		border: 0;
+		height: 32px;
+		line-height: 32px;
+		> span{
+			left: 7px;
+		}
+		> div{
+			background: url(../images/double-arrow.png) center 10px no-repeat;
+			&.open{
+				background: url(../images/double-arrow.png) center 10px no-repeat;
+			}
+		}
+	}
+	.ms-drop{
+		ul{
+			padding: 0;
+		}
+		li{
+			padding: 3px 10px;
+		}
+		input[type="checkbox"]{
+			display: none;
+		}
+		.checkbox__marked{
+			background: url(../images/custom-check.png) 97% 40% no-repeat;
+		}
+	}
+}
+
+
 .instruction{
 	color: $gray-text;
 	@include clearfix;
@@ -313,6 +356,20 @@ a{
 }
 .cms__title span{
 	line-height: 20px;
+}
+
+.fieldset{
+	position: relative;
+	padding: 20px 30px;
+	border: 1px solid $border-color;
+	&-label{
+		position: absolute;
+		top: -15px;
+		left: 10px;
+		padding: 5px 10px;
+		background: white;
+
+	}
 }
 .row-phone{
 	> div{
@@ -351,5 +408,19 @@ a{
 				display: inline-block;
 			}
 		}
+	}
+}
+.row-phone{
+	position: relative;
+}
+.phone__input{
+	position: relative;
+	&-check{
+		position: absolute;
+		top: 7px;
+		right: 3px;
+	}
+	&-days{
+		width: 195px;
 	}
 }
