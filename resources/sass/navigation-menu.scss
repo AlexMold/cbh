@@ -68,7 +68,10 @@
 			font-size: 15px;
 		}
 		span{
-			display: inline;
+			position: absolute;
+			@include transit(1s);
+			display: inline-block;
+			margin-left: 0;
 		}
 	}
 }
@@ -126,7 +129,9 @@
 			font-size: 25px;
 		}
 		span{
-			display: none;
+			position: absolute;
+			margin-left: 20px;
+			@include transit(1s);
 		}
 	}
 }

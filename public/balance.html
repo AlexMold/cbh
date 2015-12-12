@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Widget list step 1</title>
+  <title>Balance Table</title>
   <!-- Bootstrap core CSS -->
   <link href="css/style.css" rel="stylesheet">
   <!-- Chosen default styles -->
   <link href="../bower_components/chosen/chosen.min.css" rel="stylesheet">
+  <!-- Select plugin styles -->
+  <link href="../bower_components/multiple-select/multiple-select.css" rel="stylesheet">
   <!-- Pnotify styles -->
   <link href="../bower_components/pnotify/dist/pnotify.css" rel="stylesheet">
 </head>
@@ -85,73 +87,74 @@
           <div class="col-sm-10 main-content">
             <div class="main-header">
               <div class="row">
-                <div class="h3-name">Подключение виджета на сайт &nbsp;<a class="underline_link" href="#">dicom.technology</a>&nbsp;<i class="fa fa-pencil blue-color"></i></div>
+                <div class="h3-name">Ваши счета и акты</div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <p>Просто установите код виджета на все страницы вашего сайта:</p>
-                <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Some code"></textarea>
-                <br>
-                <button class="btn btn-block btn-copy">Скопировать в буфер</button>
-                <br><br>
-                <div class="instruction">
-                  <i class="fa fa-info-circle fa-2x pull-left"></i>
-                  <p class="pull-left">Код виджета можно устанавливать в любое место<br>HTML-кода перед закрывающим тегом &lt;/body&gt;.</p>
-                </div>
-                <br>
-                <p>Для вызова виджета используйте такую ссылку:</p>
-                <input type="text" class="form-control" placeholder="dicom.technology#callbackhunter">
-              </div>
-              <div class="col-sm-6">
-                <div class="install__widget-wrapper">
-                  <a class="js-call__popup" href="#">Мне нужна помощь<br>в установке кода!</a>
-                  <div class="cms__widget-popup hidden">
-                    <i class="info-box__close fa fa-times gray-color"></i>
-                    <p>Видеоинструкция по установке кода на сайт:</p>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>UMI CMS</span></a></div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>Joomla</span></a></div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>Wordpress</span></a></div>
-                      </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>WIX</span></a></div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>1C Bitrix</span></a></div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>Еще...</span></a></div>
-                      </div>
-                    </div>
-                    <br>
-                    <p>Отправить код своему программисту:</p>
-                    <div class="form-inline">
-                      <input type="email" class="form-control" placeholder="Введите email своего программиста">   &nbsp;
-                      <input type="submit" class="btn js-pnotify">
-                    </div>
-                    <br>
-                    <a href="#" class="underline_link">Хочу, чтобы сотрудники CallbackHunter сами<br>установили код виджета бесплатно</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <table class="table">
+                <thead>
+                  <tr class="active">
+                    <td>Номер</td>
+                    <td>Дата</td>
+                    <td>Способ оплаты</td>
+                    <td>Сумма</td>
+                    <td>Статус</td>
+                    <td>Счет</td>
+                    <td>Акт</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>28341</td>
+                    <td>11.10.2015</td>
+                    <td>Безналичный расчет</td>
+                    <td>57000 руб.</td>
+                    <td><span>Ожидает оплаты</span><button class="btn btn-blue pull-right">Оплатить</button></td>
+                    <td></td>
+                    <td><a href="#"><i class="fa fa-file-pdf-o red-color fa-lg"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>28342</td>
+                    <td>12.10.2015</td>
+                    <td>Оплата онлайн</td>
+                    <td>57000 руб.</td>
+                    <td><span>Счет оплачен</span> &nbsp;&nbsp;</td>
+                    <td><a href="#"><i class="fa fa-file-pdf-o red-color fa-lg"></i></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>28343</td>
+                    <td>13.10.2015</td>
+                    <td>Безналичный расчет</td>
+                    <td>57000 руб.</td>
+                    <td><span>Счет оплачен</span><button class="btn btn-disabled pull-right">Скачать счет</button></td>
+                    <td><a href="#"><i class="fa fa-file-pdf-o red-color fa-lg"></i></a></td>
+                    <td><a href="#"><i class="fa fa-file-pdf-o red-color fa-lg"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>28344</td>
+                    <td>14.10.2015</td>
+                    <td>Оплата онлайн</td>
+                    <td>57000 руб.</td>
+                    <td><span>Ожидает оплаты</span><button class="btn btn-disabled pull-right">Скачать счет</button></td>
+                    <td></td>
+                    <td><a href="#"><i class="fa fa-file-pdf-o red-color fa-lg"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>28345</td>
+                    <td>15.10.2015</td>
+                    <td>Оплата онлайн</td>
+                    <td>57000 руб.</td>
+                    <td><span>Ожидает оплаты</span> &nbsp;&nbsp;</td>
+                    <td><a href="#"><i class="fa fa-file-pdf-o red-color fa-lg"></i></a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
           </div>
           <div class="aside-menu col-sm-2">
             <ul>
-              <li class="aside-menu__item active"><a href="#">Подключение</a></li>
-              <li class="aside-menu__item"><a href="#">Уведомление</a></li>
-              <li class="aside-menu__item"><a href="#">Отдел продаж</a></li>
-              <li class="aside-menu__item"><a href="#">Внешний вид</a></li>
-              <li class="aside-menu__item"><a href="#">Параметры</a></li>
+              <li class="aside-menu__item"><a href="#">Подбор тарифа</a></li>
+              <li class="aside-menu__item active"><a href="#">Счета и акты</a></li>
             </ul>
           </div>
           <div class="info-box__trigger toggled">Обновления CallbackHunter</div>
@@ -234,6 +237,8 @@
   <script src="../bower_components/chosen/chosen.jquery.min.js"></script>
   <!-- Multiple select JavaScript -->
   <script src="../bower_components/multiple-select/multiple-select.js"></script>
+  <!-- Multiple select JavaScript -->
+  <script src="../bower_components/jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
   <!-- Pnotify JavaScript -->
   <script src="../bower_components/pnotify/dist/pnotify.js"></script>
   <!-- Menu Toggle Script -->

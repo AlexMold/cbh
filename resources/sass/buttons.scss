@@ -39,7 +39,6 @@
 	background: $border-color;
 	color: $gray-text;
 	border: 0;
-	margin-top: 5px;
 }
 .btn-copy{
 	background: white;
@@ -59,7 +58,7 @@
 	@include clearfix;
 	min-width: 20px;
 	min-height: 20px;
-	line-height: 40px;
+	line-height: 30px;
 	font-family: 'Roboto L';
 	.checkbox{
 		position: absolute;
@@ -67,6 +66,7 @@
 		display: inline-block;
 		width: 20px;
 		height: 20px;
+		margin: 5px 0 0 0;
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		background-position: center center;

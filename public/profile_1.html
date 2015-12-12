@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Widget list step 1</title>
+  <title>Profile-1</title>
   <!-- Bootstrap core CSS -->
   <link href="css/style.css" rel="stylesheet">
   <!-- Chosen default styles -->
   <link href="../bower_components/chosen/chosen.min.css" rel="stylesheet">
+  <!-- Select plugin styles -->
+  <link href="../bower_components/multiple-select/multiple-select.css" rel="stylesheet">
   <!-- Pnotify styles -->
   <link href="../bower_components/pnotify/dist/pnotify.css" rel="stylesheet">
 </head>
@@ -82,77 +84,115 @@
           <p class="pull-right">Баланс 88716 минут до 10.10.2035</p>
         </div>
         <main class="main">
-          <div class="col-sm-10 main-content">
+          <div class="col-sm-9">
             <div class="main-header">
               <div class="row">
-                <div class="h3-name">Подключение виджета на сайт &nbsp;<a class="underline_link" href="#">dicom.technology</a>&nbsp;<i class="fa fa-pencil blue-color"></i></div>
+                <div class="h3-name">Настройки профиля</div><div class="h3-name gray-color pull-right">ID 36317</div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <p>Просто установите код виджета на все страницы вашего сайта:</p>
-                <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Some code"></textarea>
-                <br>
-                <button class="btn btn-block btn-copy">Скопировать в буфер</button>
-                <br><br>
-                <div class="instruction">
-                  <i class="fa fa-info-circle fa-2x pull-left"></i>
-                  <p class="pull-left">Код виджета можно устанавливать в любое место<br>HTML-кода перед закрывающим тегом &lt;/body&gt;.</p>
-                </div>
-                <br>
-                <p>Для вызова виджета используйте такую ссылку:</p>
-                <input type="text" class="form-control" placeholder="dicom.technology#callbackhunter">
+
+            <fieldset class="fieldset">
+              <div class="fieldset-label gray-color">Основные</div>
+              <div class="col-sm-4">
+                <p>Ваше имя:</p>
+                <input type="text" class="form-control" value="Константин">
               </div>
-              <div class="col-sm-6">
-                <div class="install__widget-wrapper">
-                  <a class="js-call__popup" href="#">Мне нужна помощь<br>в установке кода!</a>
-                  <div class="cms__widget-popup hidden">
-                    <i class="info-box__close fa fa-times gray-color"></i>
-                    <p>Видеоинструкция по установке кода на сайт:</p>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>UMI CMS</span></a></div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>Joomla</span></a></div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>Wordpress</span></a></div>
-                      </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>WIX</span></a></div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>1C Bitrix</span></a></div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="cms__title"><a href="#"><img src="" alt="" class="cms__logo" width="20px" height="20px">&nbsp;<span>Еще...</span></a></div>
-                      </div>
-                    </div>
-                    <br>
-                    <p>Отправить код своему программисту:</p>
-                    <div class="form-inline">
-                      <input type="email" class="form-control" placeholder="Введите email своего программиста">   &nbsp;
-                      <input type="submit" class="btn js-pnotify">
-                    </div>
-                    <br>
-                    <a href="#" class="underline_link">Хочу, чтобы сотрудники CallbackHunter сами<br>установили код виджета бесплатно</a>
-                  </div>
-                </div>
+              <div class="col-sm-4">
+                <p>Ваш e-mail:</p>
+                <input type="email" class="form-control" value="main.email@gmail.com">
               </div>
+              <div class="col-sm-4">
+                <p>Телефон:</p>
+                <input type="tel" class="form-control" data-mask="+7(000)000-00-00" value="+79993334466">
+              </div>
+            </fieldset>
+            <br><br>
+            <fieldset class="fieldset">
+              <div class="fieldset-label gray-color">Сменить пароль</div>
+              
+              <div class="col-sm-4">
+                <p>Старый пароль:</p>
+                <input type="password" class="form-control" value="hello_guys">
+              </div>
+              <div class="col-sm-4">
+                <p>Новый пароль:</p>
+                <input type="password" class="form-control" value="hello_guys">
+              </div>
+              <div class="col-sm-4">
+                <p>Повторите новый пароль:</p>
+                <input type="password" class="form-control" value="hello_guys">
+              </div>
+            </fieldset>
+            <br><br>
+            <fieldset class="fieldset">
+              <div class="fieldset-label gray-color">Франшиза</div>
+              <div class="col-sm-4">
+                <p>ID счетчика Google Analytics:</p>
+                <input type="text" class="form-control" placeholder="UA-12345678-1">
+              </div>
+              <div class="col-sm-4">
+                <p>ID счетчика Яндекс Метрика:</p>
+                <input type="text" class="form-control" placeholder="12345678">
+              </div>
+              <div class="col-sm-4">
+              </div>
+            </fieldset>
+
+            <div class="col-sm-12 row">
+              <br>
+              <br>
+              <button class="btn pull-left gray-color">Сменить пароль</button><button class="btn btn-blue pull-right">Сохранить изменения</button>
+              <br>
+              <br>
+              <br>
             </div>
+
           </div>
-          <div class="aside-menu col-sm-2">
+          <div class="col-sm-3">
+            <p>Включенный функционал (5):</p>
             <ul>
-              <li class="aside-menu__item active"><a href="#">Подключение</a></li>
-              <li class="aside-menu__item"><a href="#">Уведомление</a></li>
-              <li class="aside-menu__item"><a href="#">Отдел продаж</a></li>
-              <li class="aside-menu__item"><a href="#">Внешний вид</a></li>
-              <li class="aside-menu__item"><a href="#">Параметры</a></li>
+              <li class="">
+                <label for="option_1" class="checkbox-label">
+                  <input id="option_1" type="checkbox" checked hidden><span class="checkbox"></span>
+                  Black Edition
+                </label>
+              </li>
+              <li class="">
+                <label for="option_2" class="checkbox-label">
+                  <input id="option_2" type="checkbox" checked hidden><span class="checkbox"></span>
+                  SMS-уведомления
+                </label>
+              </li>
+              <li class="">
+                <label for="option_3" class="checkbox-label">
+                  <input id="option_3" type="checkbox" checked hidden><span class="checkbox"></span>
+                  Email-запросы клиентов
+                </label>
+              </li>
+              <li class="">
+                <label for="option_4" class="checkbox-label">
+                  <input id="option_4" type="checkbox" checked hidden><span class="checkbox"></span>
+                  Обмен email-визитками
+                </label>
+              </li>
+              <li class="">
+                <label for="option_5" class="checkbox-label">
+                  <input id="option_5" type="checkbox" checked hidden><span class="checkbox"></span>
+                  Роботизированные диалоги
+                </label>
+              </li>
             </ul>
+
+            <fieldset class="total-leads fieldset">
+              <p><span class="lead-title">Стоимость лида</span><span class="dashed-helper"></span><span class="lead-count blue-color pull-right">$1.64</span></p>
+              <p><span class="lead-title">Конверсия</span><span class="dashed-helper"></span><span class="lead-count blue-color pull-right">111%</span></p>
+              <p><span class="lead-title">Скидка</span><span class="dashed-helper"></span><span class="lead-count blue-color pull-right">17%</span></p>
+              <p><span class="lead-title">Кол-во лидов</span><span class="dashed-helper"></span><span class="lead-count blue-color pull-right">970</span></p>
+              <br>
+              <p><b class="lead-title">ИТОГО</b><span class="dashed-helper"></span><b class="lead-count pull-right">$1591</b></p>
+              <br>
+              <button class="btn gray-color">Изменить</button>
+            </fieldset>
           </div>
           <div class="info-box__trigger toggled">Обновления CallbackHunter</div>
           <div class="info-box hidden">
@@ -234,6 +274,8 @@
   <script src="../bower_components/chosen/chosen.jquery.min.js"></script>
   <!-- Multiple select JavaScript -->
   <script src="../bower_components/multiple-select/multiple-select.js"></script>
+  <!-- Multiple select JavaScript -->
+  <script src="../bower_components/jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
   <!-- Pnotify JavaScript -->
   <script src="../bower_components/pnotify/dist/pnotify.js"></script>
   <!-- Menu Toggle Script -->
