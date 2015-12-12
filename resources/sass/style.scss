@@ -303,10 +303,8 @@ a{
 .select__add-element{
 	font-family: 'Roboto L';
 	padding: 0;
+	&.select__double-arrow{
 	.ms-choice{
-		border: 0;
-		height: 32px;
-		line-height: 32px;
 		> span{
 			left: 7px;
 		}
@@ -316,6 +314,13 @@ a{
 				background: url(../images/double-arrow.png) center 10px no-repeat;
 			}
 		}
+		}
+
+	}
+	.ms-choice{
+		border: 0;
+		height: 32px;
+		line-height: 32px;
 	}
 	.ms-drop{
 		ul{
@@ -424,14 +429,21 @@ a{
 		width: 195px;
 	}
 }
-.fieldset.total-leads{
-	padding: 20px;
-	p{
-		position: relative;
+.fieldset{
+	&.total-leads{
+		padding: 20px;
+		p{
+			position: relative;
+		}
+		.btn{
+			display: block;
+			margin: 0 auto;
+		}
 	}
-	.btn{
-		display: block;
-		margin: 0 auto;
+	&.balance-total{
+		position: absolute;
+		right: 0;
+		top: 0;
 	}
 }
 .lead-title,

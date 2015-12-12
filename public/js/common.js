@@ -144,4 +144,8 @@ new Chartist.Line('#graphic', {
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
-})
+});
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+});

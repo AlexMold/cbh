@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Balance Table</title>
+  <title>Balance</title>
   <!-- Bootstrap core CSS -->
   <link href="css/style.css" rel="stylesheet">
   <!-- Chosen default styles -->
@@ -84,78 +84,98 @@
           <p class="pull-right">Баланс 88716 минут до 10.10.2035</p>
         </div>
         <main class="main">
-          <div class="col-sm-10 main-content">
-            <div class="main-header">
+          <div class="col-sm-9">
+            <div class="main-header pull-left">
               <div class="row">
-                <div class="h3-name">Ваши счета и акты</div>
+                <div class="h3-name">Подберите оптимальный для вас тарифный план</div>
               </div>
             </div>
-              <table class="table">
-                <thead>
-                  <tr class="active">
-                    <td>Номер</td>
-                    <td>Дата</td>
-                    <td>Способ оплаты</td>
-                    <td>Сумма</td>
-                    <td>Статус</td>
-                    <td>Счет</td>
-                    <td>Акт</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>28341</td>
-                    <td>11.10.2015</td>
-                    <td>Безналичный расчет</td>
-                    <td>57000 руб.</td>
-                    <td><span>Ожидает оплаты</span><button class="btn btn-blue pull-right">Оплатить</button></td>
-                    <td></td>
-                    <td><a href="#"><i class="fa fa-file-pdf-o red-color fa-lg"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>28342</td>
-                    <td>12.10.2015</td>
-                    <td>Оплата онлайн</td>
-                    <td>57000 руб.</td>
-                    <td><span>Счет оплачен</span> &nbsp;&nbsp;</td>
-                    <td><a href="#"><i class="fa fa-file-pdf-o red-color fa-lg"></i></a></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>28343</td>
-                    <td>13.10.2015</td>
-                    <td>Безналичный расчет</td>
-                    <td>57000 руб.</td>
-                    <td><span>Счет оплачен</span><button class="btn btn-disabled pull-right">Скачать счет</button></td>
-                    <td><a href="#"><i class="fa fa-file-pdf-o red-color fa-lg"></i></a></td>
-                    <td><a href="#"><i class="fa fa-file-pdf-o red-color fa-lg"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>28344</td>
-                    <td>14.10.2015</td>
-                    <td>Оплата онлайн</td>
-                    <td>57000 руб.</td>
-                    <td><span>Ожидает оплаты</span><button class="btn btn-disabled pull-right">Скачать счет</button></td>
-                    <td></td>
-                    <td><a href="#"><i class="fa fa-file-pdf-o red-color fa-lg"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>28345</td>
-                    <td>15.10.2015</td>
-                    <td>Оплата онлайн</td>
-                    <td>57000 руб.</td>
-                    <td><span>Ожидает оплаты</span> &nbsp;&nbsp;</td>
-                    <td><a href="#"><i class="fa fa-file-pdf-o red-color fa-lg"></i></a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
+            <fieldset class="total-leads fieldset pull-right col-sm-4">
+              <p><span class="lead-title">Стоимость лида</span><span class="dashed-helper"></span><span class="lead-count blue-color pull-right">$1.64</span></p>
+              <p><span class="lead-title">Конверсия</span><span class="dashed-helper"></span><span class="lead-count blue-color pull-right">111%</span></p>
+              <p><span class="lead-title">Скидка</span><span class="dashed-helper"></span><span class="lead-count blue-color pull-right">17%</span></p>
+              <p><span class="lead-title">Кол-во лидов</span><span class="dashed-helper"></span><span class="lead-count blue-color pull-right">970</span></p>
+              <br>
+              <p><b class="lead-title">ИТОГО</b><span class="dashed-helper"></span><b class="lead-count pull-right">$1591</b></p>
+              <br>
+              <button class="btn btn-blue">Далее</button>
+            </fieldset>
+
+            <p>Выберите направление:</p>
+            <select name="" id="" class="select__add-element form-control">
+              <option class="checkbox__marked" value="">Росиия</option>
+              <option value="">Канада</option>
+              <option value="">США</option>
+            </select>
+            <div class="row">
+            <br>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Выберите способ оплаты:</p>
+              <div class="form-inline">
+              &nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="width: 190px" name="" id="" class="select__department-trigger form-control">
+                  <option value="">Безналичный</option>
+                  <option value="">Онлайн</option>
+                  <option value="">Наличный</option>
+                </select>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-sm-4">
+                <label for="call_1" class="checkbox-label">
+                  <input id="call_1" type="checkbox" hidden><span class="checkbox"></span>
+                  Распределять звонки по отделам / филиалам
+                </label>
+                label.checkbox-label[for="option_$" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."]{Black Edition}*14(>input#option_$[type="checkbox" hidden]+span.checkbox)
+              </div>
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4"></div>
+            </div>
+
           </div>
-          <div class="aside-menu col-sm-2">
+
+
+
+
+
+          <div class="col-sm-3">
+            <p>Включенный функционал (5):</p>
             <ul>
-              <li class="aside-menu__item"><a href="#">Подбор тарифа</a></li>
-              <li class="aside-menu__item active"><a href="#">Счета и акты</a></li>
+              <li class="">
+                <label for="option_1" class="checkbox-label">
+                  <input id="option_1" type="checkbox" checked hidden><span class="checkbox"></span>
+                  Black Edition
+                </label>
+              </li>
+              <li class="">
+                <label for="option_2" class="checkbox-label">
+                  <input id="option_2" type="checkbox" checked hidden><span class="checkbox"></span>
+                  SMS-уведомления
+                </label>
+              </li>
+              <li class="">
+                <label for="option_3" class="checkbox-label">
+                  <input id="option_3" type="checkbox" checked hidden><span class="checkbox"></span>
+                  Email-запросы клиентов
+                </label>
+              </li>
+              <li class="">
+                <label for="option_4" class="checkbox-label">
+                  <input id="option_4" type="checkbox" checked hidden><span class="checkbox"></span>
+                  Обмен email-визитками
+                </label>
+              </li>
+              <li class="">
+                <label for="option_5" class="checkbox-label">
+                  <input id="option_5" type="checkbox" checked hidden><span class="checkbox"></span>
+                  Роботизированные диалоги
+                </label>
+              </li>
             </ul>
+
           </div>
           <div class="info-box__trigger toggled">Обновления CallbackHunter</div>
           <div class="info-box hidden">
