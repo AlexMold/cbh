@@ -1,29 +1,6 @@
 @import 'var.scss';
 
-.radio-nav:checked + label{
-	background: #cce8f4;
-}
-.right-search__input{
-	border: 0;
-	border-radius: 20px 0 0 20px;
-	background: #f8f8f8;
-	box-shadow: none;
-}
-.right-search__button-wrapper{
-	background: #f8f8f8;
-	border: 0;
-	padding: 5px;
-	border-radius: 0 20px 20px 0;
-	box-shadow: none;
-}
-.right-search__button{
-	background: transparent;
-	border: none;
-	outline: none;
-}
-.stylish-input-group{
-	margin-right: 10px;
-}
+
 .btn-blue{
 	@include button(32px, auto, white, $back-button);
 	@include transit();
@@ -46,35 +23,4 @@
 }
 .text-right{
 	text-align: right;
-}
-.textarea{
-	width: 100%;
-	display: block;
-}
-
-.checkbox-label{
-	position: relative;
-	padding-left: 30px;
-	@include clearfix;
-	min-width: 20px;
-	min-height: 20px;
-	line-height: 30px;
-	font-family: 'Roboto L';
-	.checkbox{
-		position: absolute;
-		left: 0;
-		display: inline-block;
-		width: 20px;
-		height: 20px;
-		margin: 5px 0 0 0;
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-image: url(../images/back-checkbox.png);
-	}
-	input[type="checkbox"]:checked{
-		+ .checkbox{
-			background-image: url(../images/back-checkbox-checked.png);
-		}
-	}
 }

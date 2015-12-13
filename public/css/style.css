@@ -8286,30 +8286,6 @@ button.close {
   z-index: 5;
   cursor: pointer; }
 
-.radio-nav:checked + label {
-  background: #cce8f4; }
-
-.right-search__input {
-  border: 0;
-  border-radius: 20px 0 0 20px;
-  background: #f8f8f8;
-  box-shadow: none; }
-
-.right-search__button-wrapper {
-  background: #f8f8f8;
-  border: 0;
-  padding: 5px;
-  border-radius: 0 20px 20px 0;
-  box-shadow: none; }
-
-.right-search__button {
-  background: transparent;
-  border: none;
-  outline: none; }
-
-.stylish-input-group {
-  margin-right: 10px; }
-
 .btn-blue {
   box-sizing: border-box;
   height: 32px;
@@ -8347,9 +8323,105 @@ button.close {
 .text-right {
   text-align: right; }
 
+.radio-nav:checked + label {
+  background: #cce8f4; }
+
+.right-search__input {
+  border: 0;
+  border-radius: 20px 0 0 20px;
+  background: #f8f8f8;
+  box-shadow: none; }
+
+.right-search__button-wrapper {
+  background: #f8f8f8;
+  border: 0;
+  padding: 5px;
+  border-radius: 0 20px 20px 0;
+  box-shadow: none; }
+
+.right-search__button {
+  background: transparent;
+  border: none;
+  outline: none; }
+
+.stylish-input-group {
+  margin-right: 10px; }
+
+.select__department {
+  font-family: 'Roboto L';
+  width: auto !important; }
+  .select__department-trigger {
+    background: url(../images/ico-arrow-down.png) 95% center no-repeat;
+    position: relative;
+    padding: 5px 0 5px 15px; }
+    .select__department-trigger a.chosen-single {
+      font-family: 'Roboto L';
+      font-size: 1.4rem;
+      margin: 0;
+      padding: 0 !important;
+      border: 0 !important;
+      width: 100% !important;
+      background: white !important;
+      box-shadow: none !important; }
+    .select__department-trigger.select__double-arrow div b {
+      background: url(../images/double-arrow.png) center center no-repeat !important; }
+  .select__department-item {
+    width: 100%;
+    padding: 5px 15px;
+    cursor: pointer; }
+    .select__department-item:hover {
+      background: #eff8fc; }
+
+.select__add-element {
+  font-family: 'Roboto L';
+  padding: 0; }
+  .select__add-element.select__double-arrow .ms-choice > span {
+    left: 7px; }
+  .select__add-element.select__double-arrow .ms-choice > div {
+    background: url(../images/double-arrow.png) center 10px no-repeat; }
+    .select__add-element.select__double-arrow .ms-choice > div.open {
+      background: url(../images/double-arrow.png) center 10px no-repeat; }
+  .select__add-element .ms-choice {
+    border: 0;
+    height: 32px;
+    line-height: 32px; }
+  .select__add-element .ms-drop ul {
+    padding: 0; }
+  .select__add-element .ms-drop li {
+    padding: 3px 10px; }
+  .select__add-element .ms-drop input[type="checkbox"] {
+    display: none; }
+  .select__add-element .ms-drop .checkbox__marked {
+    background: url(../images/custom-check.png) 97% 40% no-repeat #f8f8f8; }
+
 .textarea {
   width: 100%;
   display: block; }
+
+.checkbox-flag {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: url(../images/checkbox-flag.png) center center no-repeat;
+  background-size: cover;
+  margin-bottom: 0; }
+  .checkbox-flag__label {
+    font-size: 11px;
+    float: left;
+    width: 40px;
+    text-align: center; }
+    .checkbox-flag__label.out {
+      display: none; }
+    .checkbox-flag__label.in {
+      display: inline-block; }
+  .checkbox-flag__wrapper {
+    width: 50px; }
+    .checkbox-flag__wrapper input[type="checkbox"]:checked + .checkbox-flag {
+      background: url(../images/checkbox-flag-active.png) center center no-repeat; }
+    .checkbox-flag__wrapper input[type="checkbox"]:checked ~ .checkbox-flag__label.in {
+      display: none; }
+    .checkbox-flag__wrapper input[type="checkbox"]:checked ~ .checkbox-flag__label.out {
+      display: inline-block; }
 
 .checkbox-label {
   position: relative;
@@ -8660,6 +8732,11 @@ a:hover {
 .underline_link {
   border-bottom: 1px dashed #1aaeec; }
 
+.clearfix:after, .clearfix:before {
+  display: table;
+  content: " ";
+  clear: both; }
+
 /*!
  * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -8868,53 +8945,6 @@ a:hover {
   clear: both;
   padding: 0 10px; }
 
-.select__department {
-  font-family: 'Roboto L';
-  width: auto !important; }
-  .select__department-trigger {
-    background: url(../images/ico-arrow-down.png) 95% center no-repeat;
-    position: relative;
-    padding: 5px 0 5px 15px; }
-    .select__department-trigger a.chosen-single {
-      font-family: 'Roboto L';
-      font-size: 1.4rem;
-      margin: 0;
-      padding: 0 !important;
-      border: 0 !important;
-      width: 100% !important;
-      background: white !important;
-      box-shadow: none !important; }
-    .select__department-trigger.select__double-arrow div b {
-      background: url(../images/double-arrow.png) center center no-repeat !important; }
-  .select__department-item {
-    width: 100%;
-    padding: 5px 15px;
-    cursor: pointer; }
-    .select__department-item:hover {
-      background: #eff8fc; }
-
-.select__add-element {
-  font-family: 'Roboto L';
-  padding: 0; }
-  .select__add-element.select__double-arrow .ms-choice > span {
-    left: 7px; }
-  .select__add-element.select__double-arrow .ms-choice > div {
-    background: url(../images/double-arrow.png) center 10px no-repeat; }
-    .select__add-element.select__double-arrow .ms-choice > div.open {
-      background: url(../images/double-arrow.png) center 10px no-repeat; }
-  .select__add-element .ms-choice {
-    border: 0;
-    height: 32px;
-    line-height: 32px; }
-  .select__add-element .ms-drop ul {
-    padding: 0; }
-  .select__add-element .ms-drop li {
-    padding: 3px 10px; }
-  .select__add-element .ms-drop input[type="checkbox"] {
-    display: none; }
-  .select__add-element .ms-drop .checkbox__marked {
-    background: url(../images/custom-check.png) 97% 40% no-repeat #f8f8f8; }
-
 .instruction {
   color: #ababab; }
   .instruction:after, .instruction:before {
@@ -8953,31 +8983,6 @@ a:hover {
 .row-phone > div {
   padding-right: 0; }
 
-.checkbox-flag {
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-  background: url(../images/checkbox-flag.png) center center no-repeat;
-  background-size: cover;
-  margin-bottom: 0; }
-  .checkbox-flag__label {
-    font-size: 11px;
-    float: left;
-    width: 40px;
-    text-align: center; }
-    .checkbox-flag__label.out {
-      display: none; }
-    .checkbox-flag__label.in {
-      display: inline-block; }
-  .checkbox-flag__wrapper {
-    width: 50px; }
-    .checkbox-flag__wrapper input[type="checkbox"]:checked + .checkbox-flag {
-      background: url(../images/checkbox-flag-active.png) center center no-repeat; }
-    .checkbox-flag__wrapper input[type="checkbox"]:checked ~ .checkbox-flag__label.in {
-      display: none; }
-    .checkbox-flag__wrapper input[type="checkbox"]:checked ~ .checkbox-flag__label.out {
-      display: inline-block; }
-
 .row-phone {
   position: relative; }
 
@@ -8992,6 +8997,10 @@ a:hover {
 
 .fieldset.total-leads {
   padding: 20px; }
+  .fieldset.total-leads.balance__count-leads {
+    position: absolute;
+    right: 0;
+    top: 0; }
   .fieldset.total-leads p {
     position: relative; }
   .fieldset.total-leads .btn {
