@@ -39,12 +39,6 @@ a{
 	@include clearfix;
 }
 
-/*!
- * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 
 
 /* Toggle Styles */
@@ -85,6 +79,8 @@ a{
 	}
 }
 
+
+// ***** Tabs navigation by time *****
 .days-navigation{
 	float: left;
 	display: inline-block;
@@ -107,6 +103,8 @@ a{
 	margin-top: -4px;
 	margin-right: 2px;
 }
+
+// ***** Mail table in account profile *****
 .mail{
 	&-filter{
 		display: inline-block;
@@ -188,6 +186,7 @@ a{
 		margin: 5px;
 	}
 }
+
 .info-box{
 	position: absolute;
 	bottom: 0;
@@ -232,6 +231,7 @@ a{
 		box-shadow: -1px 0 0 rgba(0, 0, 0, .125);
 	}
 }
+
 .accordeon-faq{
 	font-family: 'Roboto L';
 	&__trigger{
@@ -253,6 +253,8 @@ a{
 		}
 	}
 }
+
+// ***** Title part of request from client *****
 .request{
 	&-subject{
 		@include clearfix();
@@ -334,6 +336,8 @@ a{
 		width: 195px;
 	}
 }
+
+// ***** Fieldset bordered *****
 .fieldset{
 	&.total-leads{
 		padding: 20px;
@@ -354,6 +358,9 @@ a{
 		position: absolute;
 		right: 0;
 		top: 0;
+	}
+	p{
+		white-space: nowrap;
 	}
 }
 .lead-title,

@@ -16,7 +16,7 @@
     width: 150px;
 }
 
-/* Sidebar Styles */
+/* Toggled Sidebar Styles */
 .sidebar-wrapper.toggled{
 	.sidebar {
 		&-nav{
@@ -77,6 +77,7 @@
 }
 
 
+/* NOT Toggled Sidebar Styles */
 .sidebar-wrapper{
 	.sidebar {
 		&-nav{
@@ -137,7 +138,7 @@
 }
 
 
-
+// ***** Right Content menu *****
 .aside-menu{
 	font-family: "Roboto L";
 	height: 100vh;

@@ -8587,7 +8587,7 @@ button.close {
 .sidebar-wrapper.toggled {
   width: 150px; }
 
-/* Sidebar Styles */
+/* Toggled Sidebar Styles */
 .sidebar-wrapper.toggled .sidebar-nav {
   width: 150px;
   padding: 0;
@@ -8641,6 +8641,7 @@ button.close {
     display: inline-block;
     margin-left: 0; }
 
+/* NOT Toggled Sidebar Styles */
 .sidebar-wrapper .sidebar-nav {
   width: 150px;
   margin-bottom: 150px;
@@ -8737,11 +8738,6 @@ a:hover {
   content: " ";
   clear: both; }
 
-/*!
- * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 /* Toggle Styles */
 .wrapper {
   padding-left: 50px;
@@ -9011,6 +9007,9 @@ a:hover {
   position: absolute;
   right: 0;
   top: 0; }
+
+.fieldset p {
+  white-space: nowrap; }
 
 .lead-title,
 .lead-count {
