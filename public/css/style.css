@@ -9128,6 +9128,9 @@ body > .ui-pnotify {
     top: 35%;
     right: 5%; }
 
+.time-control {
+  margin: 0 5px; }
+
 .footer {
   z-index: 99;
   width: 100%;

@@ -142,7 +142,7 @@ $('.js-add-row-schedule').on('click', function(e){
                     '<option value="">10:00</option>'+
                     '<option value="">10:00</option>'+
                   '</select>&nbsp; - &nbsp;'+
-                  '<select name="" id="" class="select__department-trigger form-control" style="width: 81px">'+
+                  '<select name="" id="" class="select__department-trigger form-control time-control" style="width: 81px">'+
                     '<option value="">21:00</option>'+
                     '<option value="">21:00</option>'+
                     '<option value="">21:00</option>'+
