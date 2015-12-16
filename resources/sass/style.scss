@@ -5,9 +5,15 @@
 // Import custom styles, bootstrap and fontawesome
 @import "var.scss";
 @import "font.scss";
+
 @import "../../bower_components/chartist-js/dist/scss/chartist.scss";
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
 @import "../../bower_components/fontawesome/scss/font-awesome.scss";
+
+@import "../../bower_components/chosen/chosen.min.scss";
+@import "../../bower_components/multiple-select/multiple-select.scss";
+@import "../../bower_components/pnotify/dist/pnotify.scss";
+
 @import "icons.scss";
 @import "buttons.scss";
 @import "form.scss";
@@ -85,6 +91,9 @@ a{
 	float: left;
 	display: inline-block;
 	&__label{
+		&.checked{
+			background: #cce8f4;
+		}
 		&.first{
 			border-radius: 20px 0 0 20px !important;
 		}
@@ -97,11 +106,14 @@ a{
 	}
 }
 .week-days__label{
-	padding: 4px 3px;
+	// padding: 4px 3px;
 	border-radius: 0;
 	float: left;
 	margin-top: -4px;
-	margin-right: 2px;
+	margin-right: 0.5px;
+	span{
+		padding: 4px 3px;
+	}
 }
 
 // ***** Mail table in account profile *****
@@ -296,7 +308,7 @@ a{
 	left: 0;
 	width: 100%;
 	background: white;
-	box-shadow: .5px .5px 1px $gray-text;
+	box-shadow: 0 0 2px $gray-text;
 	padding: 20px 10px;
 }
 .cms__title span{

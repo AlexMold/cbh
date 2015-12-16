@@ -34,13 +34,158 @@ $(".select-item").click(function(e) {
 });
 
 $('.row-phone .js__delete-row').on('click', function(){
-	$(this).parent('.row-phone').hide();
+	$('.wrapper-for-row-phone .row-phone:last').remove();
 });
 
 $('.js__add-row').on('click', function(e){
 	e.preventDefault();
-	// var innerRow = $(this).parent().parent($('.row-phone'));
-	var innerH = $('.fieldset').append($('.row-phone').html());
+
+	var html = 
+		'<div class="row-phone row">'+
+		'<br>'+
+      '<div class="phone__input col-sm-3">'+
+        '<input type="tel" class="form-control" data-mask="+7(000)000-00-00" data-mask-selectonfocus="true" placeholder="+7(___)___-__-__">'+
+        '<div class="phone__input-check days-navigation">'+
+          '<label class="days-navigation__label">'+
+	          '<input type="radio" class="radio-nav" hidden="">'+
+	          '<span class="btn btn-xs"><i class="fa fa-phone"></i></span>'+
+	          ''+
+          '</label>'+
+          '<label class="days-navigation__label">'+
+	          '<input type="radio" class="radio-nav" hidden="">'+
+	          '<span class="btn btn-xs">sip</span>'+
+          '</label>'+
+        '</div>'+
+      '</div>'+
+      '<div class="col-sm-1"><input type="text" class="form-control" data-toggle="tooltip" title="data-original-title="Добавочный"></div>'+
+      '<div class="col-sm-3"><input type="text" class="form-control js-manager-name hidden" placeholder="Имя менеджера"></div>'+
+      '<div class="col-sm-5 row">'+
+        '<div class="col-sm-7"><input type="text" class="form-control pull-left js-office hidden" placeholder="Отдел / филиал"></div>'+
+        '<div class="checkbox-flag__wrapper pull-left">'+
+          
+          '<label class="">'+
+          	'<input type="checkbox" hidden="">'+
+          	'<span class="checkbox-flag"></span>'+
+          	'<span class="checkbox-flag__label out">выкл.</span>'+
+	          '<span class="checkbox-flag__label in">вкл.</span>'+
+          '</label>'+
+          
+        '</div>'+
+      '</div>'+
+    '</div>'
+
+		$("#call_1").click(function(e) {
+				if($(this).is(':checked')){
+					$('.js-manager-name').removeClass('hidden');
+				}else{
+					$('.js-manager-name').addClass('hidden');
+				}
+		});
+
+		$("#call_2").click(function(e) {
+				if($(this).is(':checked')){
+					$('.js-office').removeClass('hidden');
+				}else{
+					$('.js-office').addClass('hidden');
+				}
+		});
+
+
+	$(html).appendTo($('.fieldset .wrapper-for-row-phone'));
+});
+
+
+$('.js-add-row-schedule').on('click', function(e){
+	e.preventDefault();
+
+	var htmlSchedule = 
+              '<div class="schedule-row clearfix">'+
+              '<br>'+
+                '<div class="col-sm-3">'+
+                  '<div class="phone__input phone__input-days row">'+
+                    '<input type="text" class="form-control">'+
+                    '<div class="phone__input-check days-navigation">'+
+                      '<label class="days-navigation__label week-days__label">'+
+                        '<input type="checkbox" class="radio-nav" hidden>'+
+                        '<span class="btn btn-xs">Пн.</span>'+
+                      '</label>'+
+                      '<label class="days-navigation__label week-days__label">'+
+                        '<input type="checkbox" class="radio-nav" hidden>'+
+                        '<span class="btn btn-xs">Вт.</span>'+
+                      '</label>'+
+                      '<label class="days-navigation__label week-days__label">'+
+                        '<input type="checkbox" class="radio-nav" hidden>'+
+                        '<span class="btn btn-xs">Ср.</span>'+
+                      '</label>'+
+                      '<label class="days-navigation__label week-days__label">'+
+                        '<input type="checkbox" class="radio-nav" hidden>'+
+                        '<span class="btn btn-xs">Чт.</span>'+
+                      '</label>'+
+                      '<label class="days-navigation__label week-days__label">'+
+                        '<input type="checkbox" class="radio-nav" hidden>'+
+                        '<span class="btn btn-xs">Пт.</span>'+
+                      '</label>'+
+                      '<label class="days-navigation__label week-days__label">'+
+                        '<input type="checkbox" class="radio-nav" hidden>'+
+                        '<span class="btn btn-xs">Сб.</span>'+
+                      '</label>'+
+                      '<label class="days-navigation__label week-days__label">'+
+                        '<input type="checkbox" class="radio-nav" hidden>'+
+                        '<span class="btn btn-xs">Вс.</span>'+
+                      '</label>'+
+                    '</div>'+
+                  '</div>'+
+                '</div>'+
+                '<div class="form-inline col-sm-8">'+
+                  '<select name="" id="" class="select__department-trigger form-control" style="width: 81px">'+
+                    '<option value="">09:00</option>'+
+                    '<option value="">10:00</option>'+
+                    '<option value="">10:00</option>'+
+                  '</select>&nbsp; - &nbsp;'+
+                  '<select name="" id="" class="select__department-trigger form-control" style="width: 81px">'+
+                    '<option value="">21:00</option>'+
+                    '<option value="">21:00</option>'+
+                    '<option value="">21:00</option>'+
+                  '</select>&nbsp; &nbsp;'+
+                  '<select name="" id="" class="select__add-element form-control select__double-arrow">'+
+                    '<option class="checkbox__marked" value="">+64988798784</option>'+
+                    '<option value="">+8646464566</option>'+
+                    '<option value="">+7564658865</option>'+
+                  '</select>&nbsp; '+
+                '</div>'+
+              '</div>'
+
+	$(htmlSchedule).appendTo($('.schedule-row-fake'));
+
+	$('.schedule-row-fake .schedule-row:last .select__department-trigger').chosen({
+		inherit_select_classes: true,
+		disable_search: true
+	});
+
+	$('.schedule-row-fake .schedule-row:last .select__add-element').multipleSelect({
+		width: 190,
+		selectAll: false,
+		placeholder: "Выберите что нибудь",
+		onUncheckAll: true
+	});
+
+
+});
+
+$("#call_1").click(function(e) {
+		if($(this).is(':checked')){
+			$('.js-manager-name').removeClass('hidden');
+		}else{
+			$('.js-manager-name').addClass('hidden');
+		}
+});
+
+$("#call_2").click(function(e) {
+		if($(this).is(':checked')){
+			$('.js-office').removeClass('hidden');
+		}else{
+			$('.js-office').addClass('hidden');
+		}
 });
 
 $(".info-box__trigger").click(function(e) {
@@ -107,12 +252,33 @@ $('.select__add-element').multipleSelect({
 	onUncheckAll: true
 });
 
-$('.ms-drop input').on('click', function(){
-	if($(this).prop("checked")){
-		$(this).addClass('checkbox__marked');
-	};
-	$(this).parent().parent('li').toggleClass('checkbox__marked');
-});
+
+
+var addInput = function(){
+	var $input = $("#refreshInput");
+	htmlInput = 
+		'<li class="form__add-element form-inline">'+
+	    '<input id="refreshInput" type="text" required="required" placeholder="Добавить номер"/>'+
+	    '<a href="#" class="addLi"><i class="fa fa-plus" id="refreshAdd"></i></a>'+
+	  '</li>'
+
+	  $(htmlInput).insertBefore('.ms-drop ul li.selected');
+};
+
+addInput();
+
+
+
+	  $(".addLi").click(function() {
+	  		var $input = $("#refreshInput");
+	  	  var value = $input.val();
+	  	$(this).parent().parent().parent().parent().prev('.select__add-element').append('<option>' + value + '</option');
+	  	$(this).parent().parent().parent().parent().prev('.select__add-element').multipleSelect("refresh");
+	  	// return addInput();
+
+	  });
+
+
 
 // $("#refreshAdd").click(function() {
 //     var $select = $("select"),

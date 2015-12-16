@@ -8,14 +8,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Widget list step 3</title>
-  <!-- Bootstrap core CSS -->
+  <!-- Custom core CSS -->
   <link href="css/style.css" rel="stylesheet">
-  <!-- Chosen default styles -->
-  <link href="../bower_components/chosen/chosen.min.css" rel="stylesheet">
-  <!-- Select plugin styles -->
-  <link href="../bower_components/multiple-select/multiple-select.css" rel="stylesheet">
-  <!-- Pnotify styles -->
-  <link href="../bower_components/pnotify/dist/pnotify.css" rel="stylesheet">
 </head>
 
 <body>
@@ -94,60 +88,62 @@
               <fieldset class="fieldset">
                 <div class="fieldset-label gray-color">Прием звонков</div>
                 <p>Укажите номера телефонов для приема звонков от клиентов. <i class="fa fa-info-circle blue-color"></i></p>
-                <div class="row-phone row">
-                  <div class="phone__input col-sm-3">
-                    <input type="tel" class="form-control" data-mask="+7(000)000-00-00" data-mask-selectonfocus="true" placeholder="+7(___)___-__-__">
-                    <div class="phone__input-check days-navigation">
-                      <input type="radio" id="phone_1" class="radio-nav" hidden>
-                      <label for="phone_1" class="days-navigation__label btn btn-xs"><i class="fa fa-phone"></i>
-                      </label>
-                      <input type="radio" id="sip_1" class="radio-nav" hidden>
-                      <label for="sip_1" class="days-navigation__label btn btn-xs">sip
-                      </label>
+                <div class="wrapper-for-row-phone">
+                  <div class="row-phone row">
+                    <div class="phone__input col-sm-3">
+                      <input type="tel" class="form-control" data-mask="+7(000)000-00-00" data-mask-selectonfocus="true" placeholder="+7(___)___-__-__">
+                      <div class="phone__input-check days-navigation">
+                        <input type="radio" id="phone_1" class="radio-nav" hidden>
+                        <label for="phone_1" class="days-navigation__label btn btn-xs"><i class="fa fa-phone"></i>
+                        </label>
+                        <input type="radio" id="sip_1" class="radio-nav" hidden>
+                        <label for="sip_1" class="days-navigation__label btn btn-xs">sip
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-sm-1"><input type="text" class="form-control" data-toggle="tooltip" title="Добавочный"></div>
+                    <div class="col-sm-3"><input type="text" class="form-control js-manager-name hidden" placeholder="Имя менеджера"></div>
+                    <div class="col-sm-5 row">
+                      <div class="col-sm-7"><input type="text" class="form-control pull-left js-office hidden" placeholder="Отдел / филиал"></div>
+                      <div class="checkbox-flag__wrapper pull-left">
+                        <input id="flag_1" type="checkbox" hidden>
+                        <label for="flag_1" class="checkbox-flag"></label>
+                        <span class="checkbox-flag__label out">выкл.</span>
+                        <span class="checkbox-flag__label in">вкл.</span>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-sm-1"><input type="text" class="form-control" data-toggle="tooltip" title="Добавочный"></div>
-                  <div class="col-sm-3"><input type="text" class="form-control" placeholder="Имя менеджера"></div>
-                  <div class="col-sm-5 row">
-                    <div class="col-sm-7"><input type="text" class="form-control pull-left" placeholder="Отдел / филиал"></div>
-                    <div class="checkbox-flag__wrapper pull-left">
-                      <input id="flag_1" type="checkbox" hidden>
-                      <label for="flag_1" class="checkbox-flag"></label>
-                      <span class="checkbox-flag__label out">выкл.</span>
-                      <span class="checkbox-flag__label in">вкл.</span>
+                  <br>
+                  <div class="row-phone row"> 
+                    <i class="js__delete-row row-phone__close fa fa-times red-color"></i>
+                    <div class="phone__input col-sm-3">
+                      <input type="text" class="form-control" data-mask="+7(000)000-00-00" data-mask-selectonfocus="true" placeholder="+7(___)___-__-__">
+                      <div class="phone__input-check days-navigation">
+                          <input type="radio" id="phone_2" class="radio-nav" hidden>
+                          <label for="phone_2" class="days-navigation__label btn btn-xs"><i class="fa fa-phone"></i>
+                          </label>
+                          <input type="radio" id="sip_2" class="radio-nav" hidden>
+                          <label for="sip_2" class="days-navigation__label btn btn-xs">sip
+                          </label>
+                          </label>
+                      </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3"><input type="text" class="form-control js-manager-name hidden" placeholder="Имя менеджера"></div>
+                    <div class="col-sm-5 row">
+                      <div class="col-sm-7"><input type="text" class="form-control pull-left js-office hidden" placeholder="Отдел / филиал"></div>
+                      <div class="checkbox-flag__wrapper pull-left">
+                        <input id="flag_2" type="checkbox" hidden>
+                        <label for="flag_2" class="checkbox-flag"></label>
+                        <span class="checkbox-flag__label out">выкл.</span>
+                        <span class="checkbox-flag__label in">вкл.</span>
+                      </div>
+                      <a href="#" class="underline_link js__add-row">Добавить</a>
                     </div>
                   </div>
                 </div>
-                <br>
-                <div class="row-phone row"> 
-                  <i class="js__delete-row row-phone__close fa fa-times red-color"></i>
-                  <div class="phone__input col-sm-3">
-                    <input type="text" class="form-control" data-mask="+7(000)000-00-00" data-mask-selectonfocus="true" placeholder="+7(___)___-__-__">
-                    <div class="phone__input-check days-navigation">
-                        <input type="radio" id="phone_2" class="radio-nav" hidden>
-                        <label for="phone_2" class="days-navigation__label btn btn-xs"><i class="fa fa-phone"></i>
-                        </label>
-                        <input type="radio" id="sip_2" class="radio-nav" hidden>
-                        <label for="sip_2" class="days-navigation__label btn btn-xs">sip
-                        </label>
-                        </label>
-                    </div>
-                  </div>
-                  <div class="col-sm-1"></div>
-                  <div class="col-sm-3"><input type="text" class="form-control" placeholder="Имя менеджера"></div>
-                  <div class="col-sm-5 row">
-                    <div class="col-sm-7"><input type="text" class="form-control pull-left" placeholder="Отдел / филиал"></div>
-                    <div class="checkbox-flag__wrapper pull-left">
-                      <input id="flag_2" type="checkbox" hidden>
-                      <label for="flag_2" class="checkbox-flag"></label>
-                      <span class="checkbox-flag__label out">выкл.</span>
-                      <span class="checkbox-flag__label in">вкл.</span>
-                    </div>
-                    <a href="#" class="underline_link js__add-row">Добавить</a>
-                  </div>
-                </div>
-                <br>
                 <div class="row col-sm-12">
+                <br>
                   <label for="call_1" class="checkbox-label">
                     <input id="call_1" type="checkbox" hidden><span class="checkbox"></span>
                     Распределять звонки по отделам / филиалам
@@ -175,52 +171,62 @@
               </div>
               <br><br>
               <p>График работы отдела продаж:</p>
-              <div class="col-sm-3">
-                <div class="phone__input phone__input-days row">
-                  <input type="text" class="form-control">
-                  <div class="phone__input-check days-navigation">
-                    <input type="checkbox" id="day_1" class="radio-nav" hidden>
-                    <label for="day_1" class="days-navigation__label week-days__label btn btn-xs">Пн.
-                    </label>
-                    <input type="checkbox" id="day_2" class="radio-nav" hidden>
-                    <label for="day_2" class="days-navigation__label week-days__label btn btn-xs">Вт.
-                    </label>
-                    <input type="checkbox" id="day_3" class="radio-nav" hidden>
-                    <label for="day_3" class="days-navigation__label week-days__label btn btn-xs">Ср.
-                    </label>
-                    <input type="checkbox" id="day_4" class="radio-nav" hidden>
-                    <label for="day_4" class="days-navigation__label week-days__label btn btn-xs">Чт.
-                    </label>
-                    <input type="checkbox" id="day_5" class="radio-nav" hidden>
-                    <label for="day_5" class="days-navigation__label week-days__label btn btn-xs">Пт.
-                    </label>
-                    <input type="checkbox" id="day_6" class="radio-nav" hidden>
-                    <label for="day_6" class="days-navigation__label week-days__label btn btn-xs">Сб.
-                    </label>
-                    <input type="checkbox" id="day_7" class="radio-nav" hidden>
-                    <label for="day_7" class="days-navigation__label week-days__label btn btn-xs">Вс.
-                    </label>
+              <div class="schedule-row">
+                <div class="col-sm-3">
+                  <div class="phone__input phone__input-days row">
+                    <input type="text" class="form-control">
+                    <div class="phone__input-check days-navigation">
+                      <label class="days-navigation__label week-days__label">
+                        <input type="checkbox" class="radio-nav" hidden>
+                        <span class="btn btn-xs">Пн.</span>
+                      </label>
+                      <label class="days-navigation__label week-days__label">
+                        <input type="checkbox" class="radio-nav" hidden>
+                        <span class="btn btn-xs">Вт.</span>
+                      </label>
+                      <label class="days-navigation__label week-days__label">
+                        <input type="checkbox" class="radio-nav" hidden>
+                        <span class="btn btn-xs">Ср.</span>
+                      </label>
+                      <label class="days-navigation__label week-days__label">
+                        <input type="checkbox" class="radio-nav" hidden>
+                        <span class="btn btn-xs">Чт.</span>
+                      </label>
+                      <label class="days-navigation__label week-days__label">
+                        <input type="checkbox" class="radio-nav" hidden>
+                        <span class="btn btn-xs">Пт.</span>
+                      </label>
+                      <label class="days-navigation__label week-days__label">
+                        <input type="checkbox" class="radio-nav" hidden>
+                        <span class="btn btn-xs">Сб.</span>
+                      </label>
+                      <label class="days-navigation__label week-days__label">
+                        <input type="checkbox" class="radio-nav" hidden>
+                        <span class="btn btn-xs">Вс.</span>
+                      </label>
+                    </div>
                   </div>
                 </div>
+                <div class="form-inline col-sm-8">
+                  <select name="" id="" class="select__department-trigger form-control">
+                    <option value="">09:00</option>
+                    <option value="">10:00</option>
+                    <option value="">10:00</option>
+                  </select>&nbsp; - &nbsp;
+                  <select name="" id="" class="select__department-trigger form-control">
+                    <option value="">21:00</option>
+                    <option value="">21:00</option>
+                    <option value="">21:00</option>
+                  </select>&nbsp; &nbsp;
+                  <select name="" id="" class="select__add-element form-control select__double-arrow">
+                    <option class="checkbox__marked" value="">+64988798784</option>
+                    <option value="">+8646464566</option>
+                    <option value="">+7564658865</option>
+                  </select>&nbsp; 
+                  <a href="#" class="js-add-row-schedule"><i class="fa fa-plus blue-color"></i></a>
+                </div>
               </div>
-              <div class="form-inline col-sm-8">
-                <select name="" id="" class="select__department-trigger form-control">
-                  <option value="">09:00</option>
-                  <option value="">10:00</option>
-                  <option value="">10:00</option>
-                </select>&nbsp; - &nbsp;
-                <select name="" id="" class="select__department-trigger form-control">
-                  <option value="">21:00</option>
-                  <option value="">21:00</option>
-                  <option value="">21:00</option>
-                </select>&nbsp; &nbsp;
-                <select name="" id="" class="select__add-element form-control select__double-arrow">
-                  <option class="checkbox__marked" value="">+64988798784</option>
-                  <option value="">+8646464566</option>
-                  <option value="">+7564658865</option>
-                </select>&nbsp; 
-                <i class="fa fa-plus blue-color"></i>
-              </div>
+              <div class="schedule-row-fake"></div>
             </div>
             <div class="col-sm-12 row">
               <br>
@@ -307,21 +313,9 @@
   </footer>
   <!-- END Footer PART -->
 
-  <!-- jQuery -->
-  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-  <!-- Bootstrap Core JavaScript -->
-  <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
-  <!-- Graphic -->
-  <script src="../bower_components/chartist-js/dist/chartist.min.js"></script>
-  <!-- Chosen JavaScript -->
-  <script src="../bower_components/chosen/chosen.jquery.min.js"></script>
-  <!-- Multiple select JavaScript -->
-  <script src="../bower_components/multiple-select/multiple-select.js"></script>
-  <!-- Multiple select JavaScript -->
-  <script src="../bower_components/jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
-  <!-- Pnotify JavaScript -->
-  <script src="../bower_components/pnotify/dist/pnotify.js"></script>
-  <!-- Menu Toggle Script -->
+  <!-- Plugins -->
+  <script src="js/plugin.js" type="text/javascript"></script>
+  <!-- Custom Script -->
   <script src="js/common.js"></script>
 </body>
 

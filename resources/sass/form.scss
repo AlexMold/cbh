@@ -3,6 +3,10 @@
 .radio-nav:checked + label{
 	background: #cce8f4;
 }
+.radio-nav:checked + span{
+	margin-left: 1px;
+	background: #cce8f4;
+}
 
 .right-search__input{
 	border: 0;
@@ -92,7 +96,7 @@
 		input[type="checkbox"]{
 			display: none;
 		}
-		.checkbox__marked{
+		.selected{
 			background: url(../images/custom-check.png) 97% 40% no-repeat #f8f8f8;
 		}
 	}
@@ -162,5 +166,22 @@
 		+ .checkbox{
 			background-image: url(../images/back-checkbox-checked.png);
 		}
+	}
+}
+.form__add-element{
+	position: relative !important;
+	width: 100%;
+	input{
+		width: 100%;
+		border: 0;
+		border-bottom: 1px solid $border-color;
+		margin: 5px 5px;
+		padding: 10px 5px 10px;
+		outline: none;
+	}
+	.addLi{
+		position: absolute;
+		top: 35%;
+		right: 5%;
 	}
 }

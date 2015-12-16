@@ -6,12 +6,28 @@ var gulp = require('gulp'),
     notify = require("gulp-notify"),
     bower = require('gulp-bower'),
     autoprefix = require('gulp-autoprefixer'),
-    imageop = require('gulp-image-optimization');
+    imageop = require('gulp-image-optimization'),
+    concat = require('gulp-concat');
 
 var config = {
     sassPath: './resources/sass',
     bowerDir: './bower_components'
 }
+var plugins ={
+    path: ['./bower_components/jquery/dist/jquery.min.js',
+    './bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js',
+    './bower_components/chartist-js/dist/chartist.min.js',
+    './bower_components/chosen/chosen.jquery.min.js',
+    './bower_components/multiple-select/multiple-select.js',
+    './bower_components/jQuery-Mask-Plugin/dist/jquery.mask.min.js',
+    './bower_components/pnotify/dist/pnotify.js']
+}
+
+gulp.task('scripts', function() {
+  return gulp.src(plugins.path)
+    .pipe(concat('plugin.js'))
+    .pipe(gulp.dest('./public/js/'));
+});
 
 gulp.task('bower', function() {
     return bower()
