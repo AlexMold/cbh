@@ -10,6 +10,7 @@
   <title>Balance</title>
   <!-- Custom core CSS -->
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../bower_components/noUiSlider/distribute/nouislider.min.css">
 </head>
 
 <body>
@@ -104,30 +105,77 @@
             <div class="row">
             <br>
               <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Выберите способ оплаты:</p>
-              <div class="form-inline">
+              <div class="clearfix">
               &nbsp;&nbsp;&nbsp;&nbsp;
+              <div class="col-sm-3">
                 <select style="width: 190px" name="" id="" class="select__department-trigger form-control">
                   <option value="">Безналичный</option>
                   <option value="">Онлайн</option>
                   <option value="">Наличный</option>
                 </select>
-                <input type="text" class="form-control">
+              </div>
+                <div class="col-sm-4 range-wrapper">
+                  <a href="#" class="btn pull-left range-down gray-color"><i class="fa fa-minus"></i></a>
+                  <div class="pull-left col-sm-9 range" id="range-ui"></div>
+                  <a href="#" class="btn pull-right range-up gray-color"><i class="fa fa-plus"></i></a>
+                </div>
               </div>
             </div>
+            <div id="see"></div>
             <br>
             <br>
             <br>
             <div class="row">
-              <div class="col-sm-4">
-                <label for="call_1" class="checkbox-label">
-                  <input id="call_1" type="checkbox" hidden><span class="checkbox"></span>
-                  Распределять звонки по отделам / филиалам
-                </label>
-                label.checkbox-label[for="option_$" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."]{Black Edition}*14(>input#option_$[type="checkbox" hidden]+span.checkbox)
-              </div>
-              <div class="col-sm-4"></div>
-              <div class="col-sm-4"></div>
-            </div>
+            <br><br>
+                <!-- <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus_01 sagittis lacus vel augue laoreet rutrum faucibus.">
+                  <label for="option_1" class="checkbox-label">Black Edition_1
+                    <input type="checkbox" id="option_1" hidden=""><span class="checkbox"></span>
+                  </label>
+                </div> -->
+
+
+                <div class="col-sm-4">
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_01."><label for="option_01" class="checkbox-label">Black Edition_01<input type="checkbox" id="option_01" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_02."><label for="option_02" class="checkbox-label">Black Edition_02<input type="checkbox" id="option_02" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_03."><label for="option_03" class="checkbox-label">Black Edition_03<input type="checkbox" id="option_03" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_04."><label for="option_04" class="checkbox-label">Black Edition_04<input type="checkbox" id="option_04" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_05."><label for="option_05" class="checkbox-label">Black Edition_05<input type="checkbox" id="option_05" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_06."><label for="option_06" class="checkbox-label">Black Edition_06<input type="checkbox" id="option_06" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_07."><label for="option_07" class="checkbox-label">Black Edition_07<input type="checkbox" id="option_07" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_08."><label for="option_08" class="checkbox-label">Black Edition_08<input type="checkbox" id="option_08" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_09."><label for="option_09" class="checkbox-label">Black Edition_09<input type="checkbox" id="option_09" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_10."><label for="option_10" class="checkbox-label">Black Edition_10<input type="checkbox" id="option_10" hidden=""><span class="checkbox"></span></label></div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_21."><label for="option_21" class="checkbox-label">Black Edition_21<input type="checkbox" id="option_21" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_22."><label for="option_22" class="checkbox-label">Black Edition_22<input type="checkbox" id="option_22" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_23."><label for="option_23" class="checkbox-label">Black Edition_23<input type="checkbox" id="option_23" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_24."><label for="option_24" class="checkbox-label">Black Edition_24<input type="checkbox" id="option_24" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_25."><label for="option_25" class="checkbox-label">Black Edition_25<input type="checkbox" id="option_25" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_26."><label for="option_26" class="checkbox-label">Black Edition_26<input type="checkbox" id="option_26" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_27."><label for="option_27" class="checkbox-label">Black Edition_27<input type="checkbox" id="option_27" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_28."><label for="option_28" class="checkbox-label">Black Edition_28<input type="checkbox" id="option_28" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_29."><label for="option_29" class="checkbox-label">Black Edition_29<input type="checkbox" id="option_29" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_210."><label for="option_210" class="checkbox-label">Black Edition_210<input type="checkbox" id="option_210" hidden=""><span class="checkbox"></span></label></div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_31."><label for="option_31" class="checkbox-label">Black Edition_31<input type="checkbox" id="option_31" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_32."><label for="option_32" class="checkbox-label">Black Edition_32<input type="checkbox" id="option_32" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_33."><label for="option_33" class="checkbox-label">Black Edition_33<input type="checkbox" id="option_33" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_34."><label for="option_34" class="checkbox-label">Black Edition_34<input type="checkbox" id="option_34" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_35."><label for="option_35" class="checkbox-label">Black Edition_35<input type="checkbox" id="option_35" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_36."><label for="option_36" class="checkbox-label">Black Edition_36<input type="checkbox" id="option_36" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_37."><label for="option_37" class="checkbox-label">Black Edition_37<input type="checkbox" id="option_37" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_38."><label for="option_38" class="checkbox-label">Black Edition_38<input type="checkbox" id="option_38" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_39."><label for="option_39" class="checkbox-label">Black Edition_39<input type="checkbox" id="option_39" hidden=""><span class="checkbox"></span></label></div>
+                  <div class="col-sm-12" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus_310."><label for="option_310" class="checkbox-label">Black Edition_310<input type="checkbox" id="option_310" hidden=""><span class="checkbox"></span></label></div>
+                </div>
+
+
+                <!-- label.checkbox-label[data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."]{Black Edition}*14(>input[type="checkbox" hidden]+span.checkbox)
+ -->            </div><br><br>
 
           </div>
 

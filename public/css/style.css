@@ -8336,7 +8336,7 @@ button.close {
   display: block;
   width: 12px;
   height: 12px;
-  background: url(chosen-sprite.png) -42px 1px no-repeat;
+  background: url(../images/chosen-sprite.png) -42px 1px no-repeat;
   font-size: 1px; }
 
 .chosen-container-single .chosen-single abbr:hover {
@@ -8357,7 +8357,7 @@ button.close {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(chosen-sprite.png) no-repeat 0 2px; }
+  background: url(../images/chosen-sprite.png) no-repeat 0 2px; }
 
 .chosen-container-single .chosen-search {
   position: relative;
@@ -8373,8 +8373,8 @@ button.close {
   height: auto;
   outline: 0;
   border: 1px solid #aaa;
-  background: #fff url(chosen-sprite.png) no-repeat 100% -20px;
-  background: url(chosen-sprite.png) no-repeat 100% -20px;
+  background: #fff url(../images/chosen-sprite.png) no-repeat 100% -20px;
+  background: url(../images/chosen-sprite.png) no-repeat 100% -20px;
   font-size: 1em;
   font-family: sans-serif;
   line-height: normal;
@@ -8514,7 +8514,7 @@ button.close {
   display: block;
   width: 12px;
   height: 12px;
-  background: url(chosen-sprite.png) -42px 1px no-repeat;
+  background: url(../images/chosen-sprite.png) -42px 1px no-repeat;
   font-size: 1px; }
 
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
@@ -8640,8 +8640,8 @@ button.close {
 
 .chosen-rtl .chosen-search input[type=text] {
   padding: 4px 5px 4px 20px;
-  background: #fff url(chosen-sprite.png) no-repeat -30px -20px;
-  background: url(chosen-sprite.png) no-repeat -30px -20px;
+  background: #fff url(../images/chosen-sprite.png) no-repeat -30px -20px;
+  background: url(../images/chosen-sprite.png) no-repeat -30px -20px;
   direction: rtl; }
 
 .chosen-rtl.chosen-container-single .chosen-single div b {
@@ -9130,6 +9130,38 @@ body > .ui-pnotify {
 
 .time-control {
   margin: 0 5px; }
+
+.range {
+  padding: 0;
+  height: 5px !important;
+  top: 14px;
+  border: 0 !important;
+  margin: 0 2px; }
+  .range .noUi-origin {
+    background: #dadada; }
+  .range.noUi-connect {
+    background: #1aaeec; }
+    .range.noUi-connect .noUi-handle {
+      width: 16px;
+      height: 16px;
+      left: -3px;
+      top: -5px;
+      border: 3px solid #1aaeec;
+      border-radius: 50%;
+      background: white; }
+      .range.noUi-connect .noUi-handle:after, .range.noUi-connect .noUi-handle:before {
+        content: none; }
+  .range-wrapper {
+    display: block;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    padding: 1px; }
+    .range-wrapper .btn {
+      background: #e7e7e7;
+      padding: 4.5px 10px; }
+
+.see {
+  line-height: 34px; }
 
 .footer {
   z-index: 99;

@@ -266,14 +266,20 @@ var addInput = function(){
 };
 
 addInput();
+	
 
 
-
-	  $(".addLi").click(function() {
+	  $(".addLi").click(function(e) {
+	  		e.preventDefault();
 	  		var $input = $("#refreshInput");
 	  	  var value = $input.val();
-	  	$(this).parent().parent().parent().parent().prev('.select__add-element').append('<option>' + value + '</option');
-	  	$(this).parent().parent().parent().parent().prev('.select__add-element').multipleSelect("refresh");
+	  	  var valueInput = 
+						'<li class=" " style="false"><label class="">'+
+							'<input type="checkbox" data-name="selectItem">'+ value +'</label>'+
+						'</li>'
+	  	$(this).parent().parent('ul').children('.ms-no-results').before(valueInput);
+	  	// $(valueInput).before($(this).parent().parent('ul').children('.ms-no-results'));
+	  	// $(this).parent().parent().parent().parent().prev('.select__add-element').multipleSelect("refresh");
 	  	// return addInput();
 
 	  });
@@ -306,7 +312,180 @@ $(".js-pnotify").click(function(){
 	    icon: false,
 	    stack: {"dir1": "down", "dir2": "left", "push": "top", "firstpos1": 110, "firstpos2": 0}
 	});
-})
+});
+
+
+ // ***** All Range Slider *****
+var rangeTime = $('.range-time');
+function createSlider (slide) {
+    var slider = noUiSlider.create(sliders[slide], {
+        start: 0,
+        connect: "lower",
+        orientation: "horizontal",
+        step: 1,
+        range: {
+            'min': 0,
+            'max': 30
+        },
+			format: {
+			  to: function ( value ) {
+				return value;
+			  },
+			  from: function ( value ) {
+				return value.replace(',', '');
+			  }
+			}
+    });
+    
+    // add the slider object to the slider element
+    // using data for future reference
+    $(sliders[slide]).data('slider', slider);
+
+    
+    slider.on('change', function( values, handle ) {
+        // on change of the slider, find the next element and set its value
+        $(event.target).closest('.range-time').parent('.range-wrapper').siblings('.see').text(values[handle] + ' сек.');
+        console.log(event.target);
+    });
+
+    
+
+    for (var i = 0 ; i < rangeTime.length; i++) {
+
+    slider.on('change', function( values, handle ) {
+
+			$('.range-down').on('click', function(e){
+				e.preventDefault();
+				rangeTime[handle].noUiSlider.set(i-1);
+			});
+
+			$('.range-up').on('click', function(e){
+				e.preventDefault();
+				rangeTime[handle].noUiSlider.set(i+1);
+			});
+
+		});
+
+}
+
+
+}
+
+
+			var sliders = $('.range-time');
+			for ( var i = 0; i < sliders.length; i++ ) {
+				createSlider(i);
+			}
+
+// $('.slider-input').change(function(){
+//    // on input change, get the slider from the previous element using data
+//    // now we have the slider object to call set.
+//    $(this).prev().data('slider').set(this.value);
+// });
+
+
+
+
+
+	// var rangeTime = $('.range-time');
+	// 				// seeRangeTime = document.getElementsByClassName('see');
+
+	// for (var i = 0 ; i < rangeTime.length; i++) {
+
+	// 	noUiSlider.create(rangeTime[i], {
+	// 		start: 0,
+	// 		step: 1,
+	// 		connect: 'lower',
+	// 		margin: 20,
+	// 		range: {
+	// 			'min': [  0 ],
+	// 			'max': [ 30 ]
+	// 		},
+	// 		format: {
+	// 		  to: function ( value ) {
+	// 			return value;
+	// 		  },
+	// 		  from: function ( value ) {
+	// 			return value.replace(',-', '');
+	// 		  }
+	// 		}
+	// 	});
+
+	// 		var seeRangeTime = rangeTime.eq(i).parent('.range-wrapper').siblings('.see');
+
+		// rangeTime[i].noUiSlider.on('update', function( values, handle ) {
+
+		// 	seeRangeTime[handle].innerHTML = values[handle];
+
+		// 			$('.range-down').on('click', function(e){
+		// 	e.preventDefault();
+		// 	rangeTime[handle].noUiSlider.set(i-1);
+		// });
+
+		// $('.range-up').on('click', function(e){
+		// 	e.preventDefault();
+		// 	rangeTime[handle].noUiSlider.set(i+1);
+		// });
+
+		// });
+
+
+	// };
+
+
+	var startSlider = document.getElementById('range-ui'),
+		maxCount = $('.col-sm-12 > .checkbox-label'),
+		checkbox = maxCount.children('input');
+
+	noUiSlider.create(startSlider, {
+		start: 0,
+		step: 1,
+		connect: 'lower',
+		margin: 20,
+		range: {
+			'min': [  0 ],
+			'max': [ maxCount.length ]
+		},
+		format: {
+		  to: function ( value ) {
+			return value;
+		  },
+		  from: function ( value ) {
+			return value.replace(',-', '');
+		  }
+		}
+	});
+	
+	startSlider.noUiSlider.on('update', function( values, handle ) {
+		// stepSliderValueElement.innerHTML = values[handle];
+		var i = values[handle];
+		// var countCheck = checkbox[i];
+
+		if(checkbox.eq(i).prop('checked', false)){
+			checkbox.eq(i).prop('checked', true);
+		}else{
+			checkbox.eq(i).prop('checked', false);
+		}
+
+
+		$('.range-down').on('click', function(e){
+			e.preventDefault();
+			startSlider.noUiSlider.set(i-1);
+		});
+
+		$('.range-up').on('click', function(e){
+			e.preventDefault();
+			startSlider.noUiSlider.set(i+1);
+		});
+
+		// console.log(checkbox[i]);
+	});
+
+
+	// var stepSliderValueElement = document.getElementById('see');
+
+
+
 
 new Chartist.Line('#graphic', {
   labels: ['01.04.2015', '01.05.2015', '01.06.2015', '01.07.2015', '01.08.2015', '01.09.2015', '01.10.2015', '01.11.2015'],

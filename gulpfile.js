@@ -20,7 +20,8 @@ var plugins ={
     './bower_components/chosen/chosen.jquery.min.js',
     './bower_components/multiple-select/multiple-select.js',
     './bower_components/jQuery-Mask-Plugin/dist/jquery.mask.min.js',
-    './bower_components/pnotify/dist/pnotify.js']
+    './bower_components/pnotify/dist/pnotify.js',
+    './bower_components/noUiSlider/distribute/nouislider.min.js']
 }
 
 gulp.task('scripts', function() {

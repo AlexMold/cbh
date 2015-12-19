@@ -188,3 +188,43 @@
 .time-control{
 	margin: 0 5px;
 }
+
+.range{
+	padding: 0;
+	height: 5px !important;
+	top: 14px;
+	border: 0 !important;
+	margin: 0 2px;
+	& .noUi-origin{
+		background: $border-color;
+	}
+	&.noUi-connect{
+		background: $blue-text;
+		& .noUi-handle{
+			width: 16px;
+			height: 16px;
+			left: -3px;
+			top: -5px;
+			border: 3px solid $blue-text;
+			border-radius: 50%;
+			background: white;
+			&:after,
+			&:before{
+				content: none;
+			}
+		}
+	}
+	&-wrapper{
+		display: block;
+		border: 1px solid $border-color;
+		border-radius: 2px;
+		padding: 1px;
+		.btn{
+			background: #e7e7e7;
+			padding: 4.5px 10px;
+		}
+	}
+}
+.see{
+	line-height: 34px;
+}
