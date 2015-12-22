@@ -155,8 +155,8 @@
                         <textarea name="" id="" rows="3" class="form-control" placeholder="Список номеров"></textarea>
                       </div>
                       <div class="col-sm-6">
-                        <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Номера дозвона в случайном порядке</label>
-                        <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Проговорить голосом с какого сайта звонок</label>
+                        <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Номера дозвона в случайном порядке</label><br>
+                        <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Проговорить голосом с какого сайта звонок</label><br>
                         <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Автоматически подставлять код страны</label>
                       </div>
                     </div>
@@ -205,13 +205,13 @@
                     </div><br>
                     <div class="row">
                       <div class="col-sm-4">
-                        <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Активность виджета</label>
-                        <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Показывать микроменю</label>
+                        <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Активность виджета</label><br>
+                        <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Показывать микроменю</label><br>
                         <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Всегда видимая иконка</label>
                       </div>
                       <div class="col-sm-4">
                         <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Предлагать пользователю скидку</label>
-                        <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Ловить звонки на входе</label>
+                        <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Ловить звонки на входе</label><br>
                         <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Ловить звонки на выходе</label>
                       </div>
                       <div class="col-sm-4">
@@ -224,7 +224,7 @@
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab">
                   <h4 class="panel-title">
-                    <a class="accordeon-faq__trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <a class="accordeon-faq__trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       Функционал
                       <i class="fa fa-angle-down pull-right"></i>
                       <i class="fa fa-angle-up pull-right"></i>
@@ -241,7 +241,7 @@
                         <option value="">Номер</option>
                       </select>
                       <div class="clearfix"><br></div>
-                      <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Выключить ночной режим</label>
+                      <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Выключить ночной режим</label><br>
                       <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Включить гео фильтр</label>
                     </div>
                     <div class="col-sm-4">
@@ -263,23 +263,236 @@
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab">
                   <h4 class="panel-title">
-                    <a class="accordeon-faq__trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <a class="accordeon-faq__trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                       Поведение
                       <i class="fa fa-angle-down pull-right"></i>
                       <i class="fa fa-angle-up pull-right"></i>
                     </a>
                   </h4>
                 </div>
-                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div id="collapseFour" class="panel-collapse" role="tabpanel" aria-labelledby="headingFour">
                   <div class="panel-body">
-                    <p>Настройте веса поведенческих технологий по своему усмотрению</p>
-                    <br>
-                    <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Включить автопилот (рекомендуется)</label>
-                    <br>
+                    <div class="col-sm-12">
+                      <p>Настройте веса поведенческих технологий по своему усмотрению</p>
+                      <br>
+                      <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Включить автопилот (рекомендуется)</label>
+                      <div class="clearfix"><br></div>
+                    </div>
                     <div class="row">
                       <div class="col-sm-6">
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__scrolling"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_1" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__high-scrolling"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_2" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__clickon"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_3" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__site-time"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_4" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__action-form"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_5" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__page-count"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_6" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__configure"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_7" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__mouse-speed"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_8" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
                       </div>
-                      <div class="col-sm-6"></div>
+                      <div class="col-sm-6">
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__scrolling"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_1" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__mouse-vector"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_2" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__click-count"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_3" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__page-time"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_4" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__entry-count"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_5" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__marked-pages"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_6" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                        <div class="clearfix behavour-system">
+                          <div class="col-sm-1">
+                            <div class="ico-widget ico-widget__clickon"></div>
+                          </div>
+                          <div class="col-sm-7">
+                            <p>Ускорение мышки при потенциальном векторе выхода</p>
+                          </div>
+                          <div class="col-sm-1"><i class="fa fa-info-circle blue-color pull-right" data-toggle="tooltip" data-placement="top" title="Some info_7" style="line-height:30px"></i></div>
+                          <div class="col-sm-3"><select name="" id="" class="select__department-trigger form-control select__double-arrow">
+                              <option value="">01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                            </select></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -294,23 +507,24 @@
                     </a>
                   </h4>
                 </div>
-                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div id="collapseFive" class="panel-collapse" role="tabpanel" aria-labelledby="headingFive">
                   <div class="panel-body">
                     <div class="row">
                       <div class="col-sm-5">
                         <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Ограничить вывод по меткам</label>
-                        <div class="row col-sm-11 form-inline"><input type="text" class="form-control">&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-plus blue-color"></i></a><br><br></div>
+                        <div class="row col-sm-11 form-inline"><input type="text" class="form-control">&nbsp;&nbsp;&nbsp;<a class="js-append__label" href="#"><i class="fa fa-plus blue-color"></i></a><br><br></div><br>
 
                         <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Запретить вывод для меток</label>
-                        <div class="row col-sm-11 form-inline"><input type="text" class="form-control">&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-plus blue-color"></i></a><br><br></div>
+                        <div class="row col-sm-11 form-inline"><input type="text" class="form-control">&nbsp;&nbsp;&nbsp;<a class="js-append__label" href="#"><i class="fa fa-plus blue-color"></i></a><br><br></div>
                         <br>
                       </div>
+
                       <div class="col-sm-5">
                         <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Запретить вывод для адресов</label>
-                        <div class="row col-sm-11 form-inline"><input type="text" class="form-control">&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-plus blue-color"></i></a><br><br></div>
+                        <div class="row col-sm-11 form-inline"><input type="text" class="form-control">&nbsp;&nbsp;&nbsp;<a class="js-append__label" href="#"><i class="fa fa-plus blue-color"></i></a><br><br></div><br>
 
                         <label class="checkbox-label"><input type="checkbox" hidden=""><span class="checkbox"></span>Разрешить вывод для адресов</label>
-                        <div class="row col-sm-11 form-inline"><input type="text" class="form-control">&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-plus blue-color"></i></a><br><br></div>
+                        <div class="row col-sm-11 form-inline"><input type="text" class="form-control">&nbsp;&nbsp;&nbsp;<a class="js-append__label" href="#"><i class="fa fa-plus blue-color"></i></a><br><br></div>
                         
                       </div>
                     </div>
@@ -320,14 +534,12 @@
             </div>
 
             </div>
-
-
-
-
-            <div class="col-sm-12 row">
-              <br>
+            <div class="col-sm-12 row clearfix">
               <br>
               <button class="btn pull-left gray-color">Назад</button><button class="btn btn-blue pull-right">Далее</button>
+              <br>
+              <br>
+              <br>
             </div>
           </div>
           <div class="aside-menu col-sm-2">

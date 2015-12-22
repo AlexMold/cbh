@@ -94,6 +94,19 @@ $('.js__add-row').on('click', function(e){
 	$(html).appendTo($('.fieldset .wrapper-for-row-phone'));
 });
 
+$('.js-append__label').on('click', function(e){
+	e.preventDefault();
+
+	var html = 
+		'<div class="form-inline">'+
+		'<input type="text" class="form-control">&nbsp;&nbsp;&nbsp;'+
+		'<br><br>'+
+		'</div>'
+
+
+	$(html).appendTo($(this).parent());
+});
+
 
 $('.js-add-row-schedule').on('click', function(e){
 	e.preventDefault();
@@ -451,7 +464,7 @@ function createSlider (slide) {
 			return value;
 		  },
 		  from: function ( value ) {
-			return value.replace(',-', '');
+			return value.replace('', '');
 		  }
 		}
 	});
@@ -460,7 +473,6 @@ function createSlider (slide) {
 		// stepSliderValueElement.innerHTML = values[handle];
 		var i = values[handle];
 		// var countCheck = checkbox[i];
-
 		if(checkbox.eq(i).prop('checked', false)){
 			checkbox.eq(i).prop('checked', true);
 		}else{
@@ -478,7 +490,10 @@ function createSlider (slide) {
 			startSlider.noUiSlider.set(i+1);
 		});
 
-		// console.log(checkbox[i]);
+
+
+
+		console.log(checkbox.eq(i));
 	});
 
 

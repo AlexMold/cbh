@@ -39,3 +39,51 @@
 	z-index: 5;
 	cursor: pointer;
 }
+
+.ico-widget{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-size: contain;
+	background-origin: center center;
+	background-repeat: no-repeat;
+	&.ico-widget__scrolling{
+		background-image: url(../images/ico-widget-scrolling.png);
+	}
+	&.ico-widget__high-scrolling{
+		background-image: url(../images/ico-widget-high-scrolling.png);
+	}
+	&.ico-widget__clickon{
+		background-image: url(../images/ico-widget-clickon.png);
+	}
+	&.ico-widget__site-time{
+		background-image: url(../images/ico-widget-time-remaining.png);
+	}
+	&.ico-widget__action-form{
+		background-image: url(../images/ico-widget-form-manipulate.png);
+	}
+	&.ico-widget__page-count{
+		background-image: url(../images/ico-widget-page-count.png);
+	}
+	&.ico-widget__configure{
+		background-image: url(../images/ico-widget-configure-under-banner.png);
+	}
+	&.ico-widget__mouse-speed{
+		background-image: url(../images/ico-widget-mouse-speed.png);
+	}
+	&.ico-widget__mouse-vector{
+		background-image: url(../images/ico-widget-mouse-vector.png);
+	}
+	&.ico-widget__click-count{
+		background-image: url(../images/ico-widget-click-count.png);
+	}
+	&.ico-widget__page-time{
+		background-image: url(../images/ico-widget-time-remaining-page.png);
+	}
+	&.ico-widget__entry-count{
+		background-image: url(../images/ico-widget-entry-count.png);
+	}
+	&.ico-widget__marked-pages{
+		background-image: url(../images/ico-widget-marked-pages.png);
+	}
+}
