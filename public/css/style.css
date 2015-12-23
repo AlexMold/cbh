@@ -9197,6 +9197,25 @@ body > .ui-pnotify {
 .see {
   line-height: 34px; }
 
+.color-choose {
+  margin-bottom: 25px; }
+  .color-choose__label {
+    border-radius: 50%;
+    float: left;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    cursor: pointer; }
+    .color-choose__label--picker {
+      background: url(../images/ico-color-picker.png) center center no-repeat; }
+    .color-choose__label i {
+      display: none;
+      color: white; }
+    .color-choose__label input:checked ~ i {
+      display: inline-block; }
+
 .footer {
   z-index: 99;
   width: 100%;
@@ -9779,3 +9798,51 @@ a:hover {
 
 .behavour-system > div {
   padding-right: 0; }
+
+.view__desktop {
+  position: relative;
+  width: 100%;
+  min-height: 270px;
+  background: url(../images/back-full-page-widget.png) center center no-repeat;
+  background-size: 100% 100%; }
+
+.view__mobile {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto 0;
+  width: 280px;
+  min-height: 500px;
+  background: url(../images/back-mobile-widget.png) center center no-repeat;
+  background-size: 100% 100%; }
+
+.phone-position {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #1aaeec;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px; }
+  .view__desktop .phone-position {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px; }
+  .view__mobile .phone-position {
+    bottom: 33%; }
+
+#range-widget__x:before {
+  content: "X";
+  position: absolute;
+  left: -55px;
+  top: -7px; }
+
+#range-widget__y:before {
+  content: "Y";
+  position: absolute;
+  left: -55px;
+  top: -7px; }

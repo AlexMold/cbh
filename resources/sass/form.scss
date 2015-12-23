@@ -228,3 +228,27 @@
 .see{
 	line-height: 34px;
 }
+
+.color-choose{
+	margin-bottom: 25px;
+	&__label{
+		border-radius: 50%;
+		float: left;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		margin-right: 15px;
+		cursor: pointer;
+		&--picker{
+			background: url(../images/ico-color-picker.png) center center no-repeat;
+		}
+		i{
+			display: none;
+			color: white;
+		}
+		input:checked ~ i{
+			display: inline-block;
+		}
+	}
+}
