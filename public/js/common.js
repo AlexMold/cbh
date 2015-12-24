@@ -379,16 +379,15 @@ function createSlider (slide) {
 
 		});
 
+	}
+	
 }
 
-
+var sliders = $('.range-time');
+for ( var i = 0; i < sliders.length; i++ ) {
+	createSlider(i);
 }
 
-
-			var sliders = $('.range-time');
-			for ( var i = 0; i < sliders.length; i++ ) {
-				createSlider(i);
-			}
 
 // $('.slider-input').change(function(){
 //    // on input change, get the slider from the previous element using data
