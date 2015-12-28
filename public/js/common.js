@@ -43,36 +43,36 @@ $('.js__add-row').on('click', function(e){
 	var html = 
 		'<div class="row-phone row">'+
 		'<br>'+
-      '<div class="phone__input col-sm-3">'+
-        '<input type="tel" class="form-control" data-mask="+7(000)000-00-00" data-mask-selectonfocus="true" placeholder="+7(___)___-__-__">'+
-        '<div class="phone__input-check days-navigation">'+
-          '<label class="days-navigation__label">'+
-	          '<input type="radio" class="radio-nav" hidden="">'+
-	          '<span class="btn btn-xs"><i class="fa fa-phone"></i></span>'+
-	          ''+
-          '</label>'+
-          '<label class="days-navigation__label">'+
-	          '<input type="radio" class="radio-nav" hidden="">'+
-	          '<span class="btn btn-xs">sip</span>'+
-          '</label>'+
-        '</div>'+
-      '</div>'+
-      '<div class="col-sm-1"><input type="text" class="form-control" data-toggle="tooltip" title="data-original-title="Добавочный"></div>'+
-      '<div class="col-sm-3"><input type="text" class="form-control js-manager-name hidden" placeholder="Имя менеджера"></div>'+
-      '<div class="col-sm-5 row">'+
-        '<div class="col-sm-7"><input type="text" class="form-control pull-left js-office hidden" placeholder="Отдел / филиал"></div>'+
-        '<div class="checkbox-flag__wrapper pull-left">'+
-          
-          '<label class="">'+
-          	'<input type="checkbox" hidden="">'+
-          	'<span class="checkbox-flag"></span>'+
-          	'<span class="checkbox-flag__label out">выкл.</span>'+
-	          '<span class="checkbox-flag__label in">вкл.</span>'+
-          '</label>'+
-          
-        '</div>'+
-      '</div>'+
-    '</div>'
+			'<div class="phone__input col-sm-3">'+
+				'<input type="tel" class="form-control" data-mask="+7(000)000-00-00" data-mask-selectonfocus="true" placeholder="+7(___)___-__-__">'+
+				'<div class="phone__input-check days-navigation">'+
+					'<label class="days-navigation__label">'+
+						'<input type="radio" class="radio-nav" hidden="">'+
+						'<span class="btn btn-xs"><i class="fa fa-phone"></i></span>'+
+						''+
+					'</label>'+
+					'<label class="days-navigation__label">'+
+						'<input type="radio" class="radio-nav" hidden="">'+
+						'<span class="btn btn-xs">sip</span>'+
+					'</label>'+
+				'</div>'+
+			'</div>'+
+			'<div class="col-sm-1"><input type="text" class="form-control" data-toggle="tooltip" title="data-original-title="Добавочный"></div>'+
+			'<div class="col-sm-3"><input type="text" class="form-control js-manager-name hidden" placeholder="Имя менеджера"></div>'+
+			'<div class="col-sm-5 row">'+
+				'<div class="col-sm-7"><input type="text" class="form-control pull-left js-office hidden" placeholder="Отдел / филиал"></div>'+
+				'<div class="checkbox-flag__wrapper pull-left">'+
+					
+					'<label class="">'+
+						'<input type="checkbox" hidden="">'+
+						'<span class="checkbox-flag"></span>'+
+						'<span class="checkbox-flag__label out">выкл.</span>'+
+						'<span class="checkbox-flag__label in">вкл.</span>'+
+					'</label>'+
+					
+				'</div>'+
+			'</div>'+
+		'</div>'
 
 		$("#call_1").click(function(e) {
 				if($(this).is(':checked')){
@@ -112,61 +112,61 @@ $('.js-add-row-schedule').on('click', function(e){
 	e.preventDefault();
 
 	var htmlSchedule = 
-              '<div class="schedule-row clearfix">'+
-              '<br>'+
-                '<div class="col-sm-3">'+
-                  '<div class="phone__input phone__input-days row">'+
-                    '<input type="text" class="form-control">'+
-                    '<div class="phone__input-check days-navigation">'+
-                      '<label class="days-navigation__label week-days__label">'+
-                        '<input type="checkbox" class="radio-nav" hidden>'+
-                        '<span class="btn btn-xs">Пн.</span>'+
-                      '</label>'+
-                      '<label class="days-navigation__label week-days__label">'+
-                        '<input type="checkbox" class="radio-nav" hidden>'+
-                        '<span class="btn btn-xs">Вт.</span>'+
-                      '</label>'+
-                      '<label class="days-navigation__label week-days__label">'+
-                        '<input type="checkbox" class="radio-nav" hidden>'+
-                        '<span class="btn btn-xs">Ср.</span>'+
-                      '</label>'+
-                      '<label class="days-navigation__label week-days__label">'+
-                        '<input type="checkbox" class="radio-nav" hidden>'+
-                        '<span class="btn btn-xs">Чт.</span>'+
-                      '</label>'+
-                      '<label class="days-navigation__label week-days__label">'+
-                        '<input type="checkbox" class="radio-nav" hidden>'+
-                        '<span class="btn btn-xs">Пт.</span>'+
-                      '</label>'+
-                      '<label class="days-navigation__label week-days__label">'+
-                        '<input type="checkbox" class="radio-nav" hidden>'+
-                        '<span class="btn btn-xs">Сб.</span>'+
-                      '</label>'+
-                      '<label class="days-navigation__label week-days__label">'+
-                        '<input type="checkbox" class="radio-nav" hidden>'+
-                        '<span class="btn btn-xs">Вс.</span>'+
-                      '</label>'+
-                    '</div>'+
-                  '</div>'+
-                '</div>'+
-                '<div class="form-inline col-sm-8">'+
-                  '<select name="" id="" class="select__department-trigger form-control" style="width: 81px">'+
-                    '<option value="">09:00</option>'+
-                    '<option value="">10:00</option>'+
-                    '<option value="">10:00</option>'+
-                  '</select>&nbsp; - &nbsp;'+
-                  '<select name="" id="" class="select__department-trigger form-control time-control" style="width: 81px">'+
-                    '<option value="">21:00</option>'+
-                    '<option value="">21:00</option>'+
-                    '<option value="">21:00</option>'+
-                  '</select>&nbsp; &nbsp;'+
-                  '<select name="" id="" class="select__add-element form-control select__double-arrow">'+
-                    '<option class="checkbox__marked" value="">+64988798784</option>'+
-                    '<option value="">+8646464566</option>'+
-                    '<option value="">+7564658865</option>'+
-                  '</select>&nbsp; '+
-                '</div>'+
-              '</div>'
+							'<div class="schedule-row clearfix">'+
+							'<br>'+
+								'<div class="col-sm-3">'+
+									'<div class="phone__input phone__input-days row">'+
+										'<input type="text" class="form-control">'+
+										'<div class="phone__input-check days-navigation">'+
+											'<label class="days-navigation__label week-days__label">'+
+												'<input type="checkbox" class="radio-nav" hidden>'+
+												'<span class="btn btn-xs">Пн.</span>'+
+											'</label>'+
+											'<label class="days-navigation__label week-days__label">'+
+												'<input type="checkbox" class="radio-nav" hidden>'+
+												'<span class="btn btn-xs">Вт.</span>'+
+											'</label>'+
+											'<label class="days-navigation__label week-days__label">'+
+												'<input type="checkbox" class="radio-nav" hidden>'+
+												'<span class="btn btn-xs">Ср.</span>'+
+											'</label>'+
+											'<label class="days-navigation__label week-days__label">'+
+												'<input type="checkbox" class="radio-nav" hidden>'+
+												'<span class="btn btn-xs">Чт.</span>'+
+											'</label>'+
+											'<label class="days-navigation__label week-days__label">'+
+												'<input type="checkbox" class="radio-nav" hidden>'+
+												'<span class="btn btn-xs">Пт.</span>'+
+											'</label>'+
+											'<label class="days-navigation__label week-days__label">'+
+												'<input type="checkbox" class="radio-nav" hidden>'+
+												'<span class="btn btn-xs">Сб.</span>'+
+											'</label>'+
+											'<label class="days-navigation__label week-days__label">'+
+												'<input type="checkbox" class="radio-nav" hidden>'+
+												'<span class="btn btn-xs">Вс.</span>'+
+											'</label>'+
+										'</div>'+
+									'</div>'+
+								'</div>'+
+								'<div class="form-inline col-sm-8">'+
+									'<select name="" id="" class="select__department-trigger form-control" style="width: 81px">'+
+										'<option value="">09:00</option>'+
+										'<option value="">10:00</option>'+
+										'<option value="">10:00</option>'+
+									'</select>&nbsp; - &nbsp;'+
+									'<select name="" id="" class="select__department-trigger form-control time-control" style="width: 81px">'+
+										'<option value="">21:00</option>'+
+										'<option value="">21:00</option>'+
+										'<option value="">21:00</option>'+
+									'</select>&nbsp; &nbsp;'+
+									'<select name="" id="" class="select__add-element form-control select__double-arrow">'+
+										'<option class="checkbox__marked" value="">+64988798784</option>'+
+										'<option value="">+8646464566</option>'+
+										'<option value="">+7564658865</option>'+
+									'</select>&nbsp; '+
+								'</div>'+
+							'</div>'
 
 	$(htmlSchedule).appendTo($('.schedule-row-fake'));
 
@@ -222,16 +222,16 @@ $(".aside-menu__item").click(function(e) {
 });
 
 $(function() {
-  var caption = $(".mail-list__item").find(".mail-trigger"),
-    content = $(".mail-list__item").find(".mail-list__item-content").hide();
+	var caption = $(".mail-list__item").find(".mail-trigger"),
+		content = $(".mail-list__item").find(".mail-list__item-content").hide();
 
-  caption.click(function(e) {
-    e.preventDefault();
-    var activeContent = content.filter('.active');
-    activeContent.removeClass('active').slideUp(600);
-    if ($(this).next(content).is(activeContent)) return;
-    $(this).next(content).addClass('active').slideDown(300);
-  });
+	caption.click(function(e) {
+		e.preventDefault();
+		var activeContent = content.filter('.active');
+		activeContent.removeClass('active').slideUp(600);
+		if ($(this).next(content).is(activeContent)) return;
+		$(this).next(content).addClass('active').slideDown(300);
+	});
 });
 
 
@@ -241,11 +241,11 @@ $(function() {
 // ***** Add bootstrap triggers *****
 
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+	$('[data-toggle="tooltip"]').tooltip()
 });
 
 $(function () {
-  $('[data-toggle="popover"]').popover()
+	$('[data-toggle="popover"]').popover()
 });
 
 
@@ -271,31 +271,31 @@ var addInput = function(){
 	var $input = $("#refreshInput");
 	htmlInput = 
 		'<li class="form__add-element form-inline">'+
-	    '<input id="refreshInput" type="text" required="required" placeholder="Добавить номер"/>'+
-	    '<a href="#" class="addLi"><i class="fa fa-plus" id="refreshAdd"></i></a>'+
-	  '</li>'
+			'<input id="refreshInput" type="text" required="required" placeholder="Добавить номер"/>'+
+			'<a href="#" class="addLi"><i class="fa fa-plus" id="refreshAdd"></i></a>'+
+		'</li>'
 
-	  $(htmlInput).insertBefore('.ms-drop ul li.selected');
+		$(htmlInput).insertBefore('.ms-drop ul li.selected');
 };
 
 addInput();
 	
 
 
-	  $(".addLi").click(function(e) {
-	  		e.preventDefault();
-	  		var $input = $("#refreshInput");
-	  	  var value = $input.val();
-	  	  var valueInput = 
+		$(".addLi").click(function(e) {
+				e.preventDefault();
+				var $input = $("#refreshInput");
+				var value = $input.val();
+				var valueInput = 
 						'<li class=" " style="false"><label class="">'+
 							'<input type="checkbox" data-name="selectItem">'+ value +'</label>'+
 						'</li>'
-	  	$(this).parent().parent('ul').children('.ms-no-results').before(valueInput);
-	  	// $(valueInput).before($(this).parent().parent('ul').children('.ms-no-results'));
-	  	// $(this).parent().parent().parent().parent().prev('.select__add-element').multipleSelect("refresh");
-	  	// return addInput();
+			$(this).parent().parent('ul').children('.ms-no-results').before(valueInput);
+			// $(valueInput).before($(this).parent().parent('ul').children('.ms-no-results'));
+			// $(this).parent().parent().parent().parent().prev('.select__add-element').multipleSelect("refresh");
+			// return addInput();
 
-	  });
+		});
 
 
 
@@ -315,15 +315,15 @@ addInput();
 // });
 	
 $(".js-pnotify").click(function(){
-    PNotify.prototype.options.styling = "fontawesome";
+		PNotify.prototype.options.styling = "fontawesome";
 	new PNotify({
-	    text: 'Сообщение отправлено!',
-	    type: 'success',
-	    width: "auto",
-	    hide: true,
-	    delay: 2000,
-	    icon: false,
-	    stack: {"dir1": "down", "dir2": "left", "push": "top", "firstpos1": 110, "firstpos2": 0}
+			text: 'Сообщение отправлено!',
+			type: 'success',
+			width: "auto",
+			hide: true,
+			delay: 2000,
+			icon: false,
+			stack: {"dir1": "down", "dir2": "left", "push": "top", "firstpos1": 110, "firstpos2": 0}
 	});
 });
 
@@ -331,41 +331,41 @@ $(".js-pnotify").click(function(){
  // ***** All Range Slider *****
 var rangeTime = $('.range-time');
 function createSlider (slide) {
-    var slider = noUiSlider.create(sliders[slide], {
-        start: 0,
-        connect: "lower",
-        orientation: "horizontal",
-        step: 1,
-        range: {
-            'min': 0,
-            'max': 30
-        },
+		var slider = noUiSlider.create(sliders[slide], {
+				start: 0,
+				connect: "lower",
+				orientation: "horizontal",
+				step: 1,
+				range: {
+						'min': 0,
+						'max': 30
+				},
 			format: {
-			  to: function ( value ) {
+				to: function ( value ) {
 				return value;
-			  },
-			  from: function ( value ) {
+				},
+				from: function ( value ) {
 				return value.replace(',', '');
-			  }
+				}
 			}
-    });
-    
-    // add the slider object to the slider element
-    // using data for future reference
-    $(sliders[slide]).data('slider', slider);
+		});
+		
+		// add the slider object to the slider element
+		// using data for future reference
+		$(sliders[slide]).data('slider', slider);
 
-    
-    slider.on('change', function( values, handle ) {
-        // on change of the slider, find the next element and set its value
-        $(event.target).closest('.range-time').parent('.range-wrapper').siblings('.see').text(values[handle] + ' сек.');
-        console.log(event.target);
-    });
+		
+		slider.on('change', function( values, handle ) {
+				// on change of the slider, find the next element and set its value
+				$(event.target).closest('.range-time').parent('.range-wrapper').siblings('.see').text(values[handle] + ' сек.');
+				console.log(event.target);
+		});
 
-    
+		
 
-    for (var i = 0 ; i < rangeTime.length; i++) {
+		for (var i = 0 ; i < rangeTime.length; i++) {
 
-    slider.on('change', function( values, handle ) {
+		slider.on('change', function( values, handle ) {
 
 			$('.range-down').on('click', function(e){
 				e.preventDefault();
@@ -376,7 +376,6 @@ function createSlider (slide) {
 				e.preventDefault();
 				rangeTime[handle].noUiSlider.set(i+1);
 			});
-
 		});
 
 	}
@@ -445,6 +444,186 @@ for ( var i = 0; i < sliders.length; i++ ) {
 	// };
 
 
+
+
+$(function(){
+		var widgetOpacity = document.getElementById('range-widget__opacity');
+
+		noUiSlider.create(widgetOpacity, {
+			start: 100,
+			step: 1,
+			connect: 'lower',
+			range: {
+				'min': [  0 ],
+				'max': [ 100 ]
+			},
+			format: {
+				to: function ( value ) {
+				return value;
+				},
+				from: function ( value ) {
+				return value.replace('', '');
+				}
+			}
+		});
+		
+		widgetOpacity.noUiSlider.on('update', function( values, handle ) {
+			var i = values[handle];
+			$('.range-down').on('click', function(e){
+				e.preventDefault();
+				widgetOpacity.noUiSlider.set(i-1);
+			});
+
+			$('.range-up').on('click', function(e){
+				e.preventDefault();
+				widgetOpacity.noUiSlider.set(i+1);
+			});
+			$('.see-widget__opacity').html(i+'%');
+			$('#phone-position--desktop').css('opacity', i/100);
+			console.log(i);
+
+	});
+});
+
+
+$(function(){
+
+		var widgetX = document.getElementById('range-widget__x');
+
+		noUiSlider.create(widgetX, {
+			start: 0,
+			step: 1,
+			connect: 'lower',
+			range: {
+				'min': [  0 ],
+				'max': [ 100 ]
+			},
+			format: {
+				to: function ( value ) {
+				return value;
+				},
+				from: function ( value ) {
+				return value.replace('', '');
+				}
+			}
+		});
+		
+		widgetX.noUiSlider.on('update', function( values, handle ) {
+			var i = values[handle];
+
+
+			$('.range-down').on('click', function(e){
+				e.preventDefault();
+				widgetX.noUiSlider.set(i-1);
+			});
+
+			$('.range-up').on('click', function(e){
+				e.preventDefault();
+				widgetX.noUiSlider.set(i+1);
+			});
+
+			$('.see-widget__x').html(i+'%');
+			$('#phone-position--desktop').css('left', i+'%');
+			console.log(i);
+
+	});
+});
+
+
+$(function(){
+
+		var widgetY = document.getElementById('range-widget__y');
+
+		noUiSlider.create(widgetY, {
+			start: 0,
+			step: 1,
+			connect: 'lower',
+			range: {
+				'min': [  0 ],
+				'max': [ 100 ]
+			},
+			format: {
+				to: function ( value ) {
+				return value;
+				},
+				from: function ( value ) {
+				return value.replace('', '');
+				}
+			}
+		});
+		
+		widgetY.noUiSlider.on('update', function( values, handle ) {
+			// stepSliderValueElement.innerHTML = values[handle];
+			var i = values[handle];
+
+
+			$('.range-down').on('click', function(e){
+				e.preventDefault();
+				widgetY.noUiSlider.set(i-1);
+			});
+
+			$('.range-up').on('click', function(e){
+				e.preventDefault();
+				widgetY.noUiSlider.set(i+1);
+			});
+
+			$('.see-widget__y').html(i+'%');
+
+			$('#phone-position--desktop').css('bottom', i+'%');
+			console.log(i);
+
+	});
+});
+
+
+
+$(function(){
+
+		var widgetMobile = document.getElementById('range-widget__mobile');
+
+		noUiSlider.create(widgetMobile, {
+			start: 0,
+			step: 1,
+			connect: 'lower',
+			range: {
+				'min': [  0 ],
+				'max': [ 100 ]
+			},
+			format: {
+				to: function ( value ) {
+				return value;
+				},
+				from: function ( value ) {
+				return value.replace('', '');
+				}
+			}
+		});
+		
+		widgetMobile.noUiSlider.on('update', function( values, handle ) {
+			// stepSliderValueElement.innerHTML = values[handle];
+			var i = values[handle];
+
+
+			$('.range-down').on('click', function(e){
+				e.preventDefault();
+				widgetMobile.noUiSlider.set(i-1);
+			});
+
+			$('.range-up').on('click', function(e){
+				e.preventDefault();
+				widgetMobile.noUiSlider.set(i+1);
+			});
+
+			$('.see-widget__mobile').html(i+'%');
+			$('#phone-position--mobile').css('left', i+'%');
+
+			console.log(i);
+
+	});
+});
+
+
+
 	var startSlider = document.getElementById('range-ui'),
 		maxCount = $('.col-sm-12 > .checkbox-label'),
 		checkbox = maxCount.children('input');
@@ -459,12 +638,12 @@ for ( var i = 0; i < sliders.length; i++ ) {
 			'max': [ maxCount.length ]
 		},
 		format: {
-		  to: function ( value ) {
+			to: function ( value ) {
 			return value;
-		  },
-		  from: function ( value ) {
+			},
+			from: function ( value ) {
 			return value.replace('', '');
-		  }
+			}
 		}
 	});
 	
@@ -489,9 +668,6 @@ for ( var i = 0; i < sliders.length; i++ ) {
 			startSlider.noUiSlider.set(i+1);
 		});
 
-
-
-
 		console.log(checkbox.eq(i));
 	});
 
@@ -502,16 +678,16 @@ for ( var i = 0; i < sliders.length; i++ ) {
 
 
 new Chartist.Line('#graphic', {
-  labels: ['01.04.2015', '01.05.2015', '01.06.2015', '01.07.2015', '01.08.2015', '01.09.2015', '01.10.2015', '01.11.2015'],
-  series: [
-    [6, 9, 7, 8, 5,8,1,25,15,20,2,9,28,25,35,3,5]
-  ]
+	labels: ['01.04.2015', '01.05.2015', '01.06.2015', '01.07.2015', '01.08.2015', '01.09.2015', '01.10.2015', '01.11.2015'],
+	series: [
+		[6, 9, 7, 8, 5,8,1,25,15,20,2,9,28,25,35,3,5]
+	]
 }, {
-  fullWidth: true,
-  low: 0,
-  chartPadding: {
-    right: 50
-  }
+	fullWidth: true,
+	low: 0,
+	chartPadding: {
+		right: 50
+	}
 });
 
 
